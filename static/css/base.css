@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Ysabeau&display=swap');
+
+
+/* ----this was added to keep footer at the bottom credit 30secondsofcode */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+footer {
+    margin-top: auto;
+}
+/* ---------------------------------------------------------------- */
+
+
+.logo {
+    font-family: Ysabeau, sans-serif;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+
+.homepage-image {
+    width: 100%;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+/* footer */
+
+footer i {
+    font-size: x-large;
+}
+
+.fa-facebook {
+    color: #1bbee3;
+    
+}
+
+.fa-instagram {
+    color: #cf8f9b;
+    text-shadow: 1px 1px 5px #c78f9a
+}
+

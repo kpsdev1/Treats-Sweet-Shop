@@ -1,0 +1,277 @@
+[
+    {
+       "pk":1,
+       "model":"products.product",
+       "fields":{
+          "category":2,
+          "name":"Chocolate M&M's",
+          "sku":"p10000001",
+          "description":"",
+          "price":4.00,
+          "image_url":"125g Pouch of Chocolate M&M's",
+          "image":"chocolate-mms.jpg"
+       }
+    },
+    {
+        "pk":2,
+        "model":"products.product",
+        "fields":{
+           "category":2,
+           "name":"Peanut M&M's",
+           "sku":"p10000002",
+           "description":"125g Pouch of Peanut M&M's",
+           "price":4.00,
+           "image_url":"",
+           "image":"peanut-mms.jpg"
+        }
+     },
+     {
+        "pk":3,
+        "model":"products.product",
+        "fields":{
+           "category":2,
+           "name":"Maltesers",
+           "sku":"p10000003",
+           "description":"150g pouch of Maltesers",
+           "price":4.50,
+           "image_url":"",
+           "image":"maltesers.jpg"
+        }
+     },
+     {
+        "pk":4,
+        "model":"products.product",
+        "fields":{
+           "category":1,
+           "name":"Gummy Bears",
+           "sku":"p10000004",
+           "description":"150g packet of Jellies",
+           "price":5.50,
+           "image_url":"",
+           "image":"gummy-bears.jpg"
+        }
+     },
+     {
+        "pk":5,
+        "model":"products.product",
+        "fields":{
+           "category":1,
+           "name":"Jelly Worms",
+           "sku":"p10000005",
+           "description":"120g packet of Jelly Worms",
+           "price":6.80,
+           "image_url":"",
+           "image":"jelly-worms.jpg"
+        }
+     },
+     {
+        "pk":6,
+        "model":"products.product",
+        "fields":{
+           "category":1,
+           "name":"Jelly Beans",
+           "sku":"p10000006",
+           "description":"150g packet of Jelly beans",
+           "price":6.80,
+           "image_url":"",
+           "image":"jelly-beans.jpg"
+        }
+     },
+     {
+        "pk":7,
+        "model":"products.product",
+        "fields":{
+           "category":1,
+           "name":"Jelly Hearts",
+           "sku":"p10000007",
+           "description":"150g packet of Jelly hearts",
+           "price":6.50,
+           "image_url":"",
+           "image":"jelly-hearts.jpg"
+        }
+     },
+     {
+        "pk":8,
+        "model":"products.product",
+        "fields":{
+           "category":1,
+           "name":"Jelly Bears",
+           "sku":"p10000008",
+           "description":"150g packet of Jelly Bears",
+           "price":6.10,
+           "image_url":"",
+           "image":"jelly-bears.jpg"
+        }
+     },
+     {
+        "pk":9,
+        "model":"products.product",
+        "fields":{
+           "category":1,
+           "name":"Jelly Beans",
+           "sku":"p10000009",
+           "description":"150g packet of skittles",
+           "price":6.10,
+           "image_url":"",
+           "image":"skittles.jpg"
+        }
+     },
+     {
+        "pk":10,
+        "model":"products.product",
+        "fields":{
+           "category":1,
+           "name":"Skittles",
+           "sku":"p100000010",
+           "description":"150g packet of skittles",
+           "price":5.10,
+           "image_url":"",
+           "image":"skittles.jpg"
+        }
+     },
+     {
+        "pk":11,
+        "model":"products.product",
+        "fields":{
+           "category":1,
+           "name":"Jelly Babies",
+           "sku":"p100000010",
+           "description":"150g packet of Jelly Babies",
+           "price":6.50,
+           "image_url":"",
+           "image":"jelly-babies.jpg"
+        }
+     },
+     {
+        "pk":12,
+        "model":"products.product",
+        "fields":{
+           "category":1,
+           "name":"Fizzy Strawberrys",
+           "sku":"p100000012",
+           "description":"150g packet of Fizzy Strawberrys",
+           "price":4.50,
+           "image_url":"",
+           "image":"fizzy-strawberrys.jpg"
+        }
+     },
+     {
+      "pk":13,
+      "model":"products.product",
+      "fields":{
+         "category":1,
+         "name":"Cherry Lollipops",
+         "sku":"p100000013",
+         "description":"20 pack",
+         "price":4.20,
+         "image_url":"",
+         "image":"cherry-lollipop.jpg"
+      }
+   },
+   {
+      "pk":14,
+      "model":"products.product",
+      "fields":{
+         "category":2,
+         "name":"Chocolate Cookies",
+         "sku":"p100000014",
+         "description":"Beautiful homemade chocolate cookies, 15 pack",
+         "price":8.20,
+         "image_url":"",
+         "image":"chocolate-cookies.jpg"
+      }
+   },
+   {
+      "pk":15,
+      "model":"products.product",
+      "fields":{
+         "category":2,
+         "name":"Peanut Chocolate Cookies",
+         "sku":"p100000015",
+         "description":"Beautiful homemade Peanut and Chocolate cookies, 15 pack",
+         "price":8.80,
+         "image_url":"",
+         "image":"homemade-peanut-cookies.jpg"
+      }
+   },
+   {
+      "pk":16,
+      "model":"products.product",
+      "fields":{
+         "category":2,
+         "name":"Cream Eggs",
+         "sku":"p100000016",
+         "description":"10 pack",
+         "price":5.80,
+         "image_url":"",
+         "image":"cream-eggs.jpg"
+      }
+   },
+   {
+      "pk":17,
+      "model":"products.product",
+      "fields":{
+         "category":2,
+         "name":"Mini bars mixed pack",
+         "sku":"p100000017",
+         "description":"300g Pouch",
+         "price":9.80,
+         "image_url":"",
+         "image":"mini-bars.jpg"
+      }
+   },
+   {
+      "pk":18,
+      "model":"products.product",
+      "fields":{
+         "category":2,
+         "name":"Mini bars mixed pack",
+         "sku":"p100000018",
+         "description":"300g Pouch",
+         "price":9.80,
+         "image_url":"",
+         "image":"mini-bars.jpg"
+      }
+   },
+   {
+      "pk":19,
+      "model":"products.product",
+      "fields":{
+         "category":2,
+         "name":"Smarties",
+         "sku":"p100000019",
+         "description":"200g Pouch",
+         "price":6.80,
+         "image_url":"",
+         "image":"smarties.jpg"
+      }
+   },
+   {
+      "pk":20,
+      "model":"products.product",
+      "fields":{
+         "category":2,
+         "name":"Homemade White chocolate and hazelnut bar",
+         "sku":"p100000020",
+         "description":"150g",
+         "price":5.50,
+         "image_url":"",
+         "image":"white-chocolate-hazelnut.jpg"
+      }
+   },
+   {
+      "pk":21,
+      "model":"products.product",
+      "fields":{
+         "category":1,
+         "name":"Sours",
+         "sku":"p100000021",
+         "description":"150g",
+         "price":5.50,
+         "image_url":"",
+         "image":"sours.jpg"
+      }
+   }
+
+
+]

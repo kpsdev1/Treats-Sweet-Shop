@@ -6,12 +6,26 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav center">
         <a class="nav-item nav-link active" href="{% url 'home' %}">Home</a>
-        <a class="nav-item nav-link" href="#">Products</a>
+
+        <!-- products dropdown -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="#" class="dropdown-item">Jellies & Candy</a>
+                <a class="dropdown-item" href="{% url 'account_logout' %}">Chocolate</a>
+                <a class="dropdown-item" href="{% url 'account_login' %}">Toffee & Fudge</a>
+                <a class="dropdown-item" href="{% url 'account_signup' %}">Liquorice</a>
+              </div>
+          </li>
+        </ul>
+
         <a class="nav-item nav-link" href="#">Sweet Box Gifts</a>
         <a class="nav-item nav-link" href="#">Contact</a>
       </div>
 
-      <div class="col-12 col-lg-2 my-auto py-1 py-lg-0">
+      <!-- search -->
+      <div class="col-11 col-lg-2 my-auto py-1 py-lg-0">
         <form method="GET" action="">
             <div class="input-group w-100">
                 <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
@@ -26,8 +40,8 @@
         </form>
     </div>
 
-  
-      <ul class="navbar-nav mr-auto">
+      <!-- profile dropdown -->
+      <ul class="navbar-nav mr-auto ps-md-5">
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user"></i></a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -45,7 +59,7 @@
                 
           </li>
       </ul>
-      <a class="nav-item nav-link" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+      <a class="nav-item nav-link pe-md-5 ps-0" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
     </div>
     
 </nav>

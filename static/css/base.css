@@ -46,3 +46,10 @@ footer i {
     text-shadow: 1px 1px 5px #c78f9a
 }
 
+/* products card */
+.card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover; 
+    
+}

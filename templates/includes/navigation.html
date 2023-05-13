@@ -60,7 +60,16 @@
                 
           </li>
       </ul>
-      <a class="nav-item nav-link pe-md-5 ps-0 ps-md-2" href="{% url 'view_cart' %}"><i class="fa-solid fa-bag-shopping"></i></a>
+      <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-item nav-link pe-md-5 ps-0 ps-md-2" href="{% url 'view_cart' %}">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <p class="my-0">
+          {% if grand_total %}
+              ${{ grand_total|floatformat:2 }}
+          {% else %}
+              €0
+          {% endif %}
+      </p>
+      </a>
     </div>
     
 </nav>

@@ -1,0 +1,31 @@
+<script type="text/javascript">
+
+    let plus = document.querySelector('.increment');
+    let minus = document.querySelector('.decrement');
+    let quantity = document.querySelector('.quantity_num');
+
+
+
+    plus.addEventListener('click', ()=>{
+        quantity.value++;
+        console.log(quantity.value)
+        
+    });
+
+
+    minus.addEventListener('click', ()=>{
+        if(quantity.value <= 1){
+            minus.disabled = true;
+        }
+        else{
+            quantity.value--;
+            
+
+        }
+    });
+  
+    
+    
+    
+    
+</script>

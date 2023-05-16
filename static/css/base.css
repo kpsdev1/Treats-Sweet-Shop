@@ -71,3 +71,9 @@ footer i {
     color: #cf8f9b;
     text-shadow: 1px 1px 5px #c78f9a
 }
+
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+}

@@ -31,28 +31,39 @@
 
               <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                 {% csrf_token %}
-                <div class="form-row">
-                  <div class="col-md-4 col-6 mb-3">
-                      <label class="mb-2 d-block mt-5">Quantity</label>
-                      <div class="input-group mb-3" style="width: 170px;">
-                        <input type="number" class="form-control text-center border border-secondary" name="quantity" placeholder="1" value="1" min="1" max="99" aria-label="Example text with button addon" aria-describedby="button-addon1" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}" />
-                      </div>
 
-                      <div class="col-12">
-                        <a href="{% url 'products' %}" class="btn btn-warning shadow-0">Back </a>
-                        <input type="submit" class="btn btn-primary shadow-0" value="Add to Cart">
-                      </div>
-                      <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                  </div>
+                <div class="col-md-4 col-6 mb-3">
+                    <label class="mb-2 mt-5 d-block">Quantity</label>
+                    <div class="input-group mb-3" style="width: 170px;">
+                      <button class="btn btn-white border border-secondary px-3 decrement" type="button" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}" data-mdb-ripple-color="dark">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <input type="number" class="form-control text-center border border-secondary quantity_num" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}" name="quantity" value="1" min="1" max="99" aria-label="Quantity button" />
+                      <button class="btn btn-white border border-secondary px-3 increment" type="button" data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}" data-mdb-ripple-color="dark">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
                 </div>
+                  
+                  
+
+
+                <div class="col-12 mt-5">
+                    <a href="{% url 'products' %}" class="btn btn-warning shadow-0">Back </a>
+                    <input type="submit" class="btn btn-primary shadow-0" value="Add to Cart">
+                </div>
+                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+
               </form>
           </div>
-      </div>   
+        </div>
+               
   </div>
 </div>
 
+{% endblock %}
 
-
-
-
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}

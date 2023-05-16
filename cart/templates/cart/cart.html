@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% load bag_tools %}
 
 {% block content %}
     <div class="container mb-2">
@@ -40,7 +40,7 @@
                                         <p class="my-0">€{{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
-                                        <form class="form update-form" action="" method="POST">
+                                        <form class="form update-form" action="{% url 'adjust_cart' item.item_id %}" method="POST">
                                             {% csrf_token %}
                             
                                             <div class="col-md-4 col-6 mb-3">
@@ -48,7 +48,7 @@
                                                   <button class="btn btn-white border border-secondary px-3 decrement" type="button" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}" data-mdb-ripple-color="dark">
                                                     <i class="fas fa-minus"></i>
                                                   </button>
-                                                  <input type="number" class="form-control text-center border border-secondary quantity_num" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}" name="quantity" value="1" min="1" max="99" aria-label="Quantity button" />
+                                                  <input type="number" class="form-control text-center border border-secondary quantity_num" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}" name="quantity" value="{{ item.quantity }}" min="1" max="99" aria-label="Quantity button" />
                                                   <button class="btn btn-white border border-secondary px-3 increment" type="button" data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}" data-mdb-ripple-color="dark">
                                                     <i class="fas fa-plus"></i>
                                                   </button>
@@ -56,10 +56,10 @@
                                             </div>
                                         </form>
                                         <a class="update-link text-info ms-4"><small>Update</small></a>
-                                        <a class="remove-item text-danger ms-2" id="remove_{{ item.item_id }}" ><small>Remove</small></a>    
+                                        <a class="remove-item text-danger ms-2" id="remove_{{ item.item_id }}"><small>Remove</small></a> 
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">€{{ item.product.price }}</p>
+                                        <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             
@@ -67,7 +67,7 @@
                         </table>
                     </div>
                         <div class="row">
-                          <div class="col-3 offset-9 mb-4">
+                            <div class="col-3 offset-9 mb-4">
                                 <div class="pt-5 text-right">
                                     <h6><strong>Cart Total: €{{ total|floatformat:2 }}</strong></h6>
                                     <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
@@ -82,7 +82,8 @@
                                     <a href="{% url 'products' %}" class="btn btn-warning shadow-0 rounded-0">Back </a>
                                     <a href="" class="btn btn-success rounded-0 btn">Secure Checkout <i class="fas fa-lock"></i></a>
                                 </div>
- 
+                            </div>
+                        </div>
                 {% else %}
                     <p class="lead mb-5">Your Cart is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-warning shadow-0">Back </a>
@@ -90,7 +91,7 @@
             </div>
         </div>
     </div>
-
+    
 
 {% endblock %}
 
@@ -108,18 +109,20 @@
         form.submit();
     })
 
-    // Remove item and reload on click
-    $('.remove-item').click(function(e) {
+     // Remove item and reload on click
+     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         
-        var url = `/bag/remove/${itemId}`;
+        var url = `/cart/remove/${itemId}/`;
         var data = {'csrfmiddlewaretoken': csrfToken,};
-
+        
         $.post(url, data)
          .done(function() {
              location.reload();
          });
     })
+
+   
 </script>
 {% endblock %}

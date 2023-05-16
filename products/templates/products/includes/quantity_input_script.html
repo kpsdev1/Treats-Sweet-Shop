@@ -9,6 +9,7 @@
     plus.addEventListener('click', ()=>{
         quantity.value++;
         console.log(quantity.value)
+        minus.disabled = false;
         
     });
 
@@ -18,9 +19,8 @@
             minus.disabled = true;
         }
         else{
-            quantity.value--;
-            
 
+            quantity.value--;
         }
     });
   

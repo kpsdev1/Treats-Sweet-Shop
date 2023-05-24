@@ -57,6 +57,32 @@ footer {
     object-fit: cover; 
 }
 
+/* product admin form */
+#product-admin .form-control {
+    border-bottom: 1px solid black;
+}
+
+#product-admin .select {
+    border-bottom: 1px solid black;
+}
+
+/* reviews */
+#review-form .form-control, .select {
+    border-bottom: 1px solid black;
+}
+
+.star {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.like {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
 /* footer */
 footer i {
     font-size: x-large;

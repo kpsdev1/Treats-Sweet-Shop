@@ -22,7 +22,7 @@
         </ul>
 
         <a class="nav-item nav-link" href="#">Sweet Box Gifts</a>
-        <a class="nav-item nav-link" href="#">Reviews</a>
+        <a class="nav-item nav-link" href="{% url 'reviews' %}">Reviews</a>
       </div>
 
       <!-- search -->
@@ -61,7 +61,7 @@
           </li>
       </ul>
       <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-item nav-link pe-md-5 ps-0 ps-md-2" href="{% url 'view_cart' %}">
-        <i class="fa-solid fa-bag-shopping"></i>
+        <i class="fa-solid fa-bag-shopping mt-md-4"></i>
         <p class="my-0">
           {% if grand_total %}
               €{{ grand_total|floatformat:2 }}

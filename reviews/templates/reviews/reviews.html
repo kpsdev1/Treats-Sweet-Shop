@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+
+
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-3">
+        {% if user.is_authenticated %}
+        <a href="{% url 'add_review' %}" class="btn btn-success">Add A Review</a>
+    {% endif %}
+    </div>
+</div>
+
+
+    <h1 class="text-center">Customer Reviews</h1>
+
+{% for review in reviews_list %}
+<div class="card border-0">
+    <div class="card-body border-1">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 border border-light bg-light position-relative">
+                    <p class="pt-3 fs-5"><i class="fa-solid fa-user"></i> {{ review.posted_by }}</p>
+                    <div class="star pt-3">
+                        <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                        <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                        <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                        <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                        <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                    </div>
+                <p class="mb-4 pt-2">{{ review.body }}</p>
+                    <a> <i class="far fa-heart text-danger fa-lg like pb-2"></i> </a>
+                    <p class="text-muted text-center m-0 pb-2">Posted on {{ review.date_added }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

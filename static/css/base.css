@@ -77,11 +77,21 @@ footer {
     right: 5px;
 }
 
-.like {
+.review-update {
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
+
+/* extra small button */
+.btn-xs {
+    padding: .35rem .4rem;
+    font-size: .875rem;
+    line-height: .5;
+    border-radius: 0;
+}
+
+
 
 /* footer */
 footer i {
@@ -171,3 +181,23 @@ footer i {
     overflow-y: auto;
 }
 
+
+/* extra small screens */
+@media screen and (max-width: 420px) {
+
+    /* reviews */
+    .heading-small {
+        font-size: 1.5em !important;
+
+    }
+
+    .title-test {
+        font-size: medium !important;
+        margin-top: 8%;
+    }
+
+    .text-small {
+        font-size: x-small;
+
+    }
+}

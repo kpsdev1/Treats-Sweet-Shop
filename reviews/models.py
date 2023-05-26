@@ -26,6 +26,7 @@ class Review(models.Model):
 
     class Meta:
         ordering = ['-date_added']
+        verbose_name_plural = 'Reviews'
 
     def __str__(self):
         return self.title

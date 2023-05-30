@@ -17,11 +17,9 @@ class BlogListView(ListView):
 
 class BlogDetailView(LoginRequiredMixin, DetailView):
     # display the blog details page
-    
 
     def get(self, request, pk, *args, **kwargs):
         post = get_object_or_404(Post.objects, pk=pk)
-
         comments = post.comments.order_by("-posted_on")
        
         return render(
@@ -34,11 +32,12 @@ class BlogDetailView(LoginRequiredMixin, DetailView):
             },
         )
 
-
-    def post(self, request, *args, **kwargs):
-        self.object = self.get_object()
-        form = self.get_form()
+    def post(self, request, pk, *args, **kwargs):
+        
+        post = get_object_or_404(Post.objects, pk=pk)
+        comments = post.comments.order_by("-posted_on")
         comment_form = CommentForm(data=request.POST)
+
         if comment_form.is_valid():
             comment_form.instance.email = request.user.email
             comment_form.instance.name = request.user.username
@@ -60,9 +59,7 @@ class BlogDetailView(LoginRequiredMixin, DetailView):
         )
         
 
-
 # #########################################################################
-
 class BlogCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     # create a post
     model = Post

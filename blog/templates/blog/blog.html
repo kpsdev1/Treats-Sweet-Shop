@@ -4,12 +4,38 @@
 
 {% block content %}
 
-<div class="row">
-    <h1 class="text-center">Blog Page</h1>
-    <div class="col-12 col-md-8 offset-md-2">
 
+{% if request.user.is_superuser %}
+    <div>
+        <a href="{% url 'add_post' %}" class="btn btn-success">Add A Review</a>
+    </div>
+{% endif %}
+
+
+<div class="row">
+    <div class="col-10 offset-1">
+        <div class="row mt-1 mb-2"></div>
+            <div class="row">
+                {% for post in post_list %}
+                <div class="col-12 col-md-6 col-lg-4 mb-2">
+                    <div class="card">
+                        
+                        <img src="{{ post.image.url }}" class="card-img-top" alt="blog image">
+                        <div class="card-body text-center">
+                            <p class="card-text"> {{ post.title }}</p>
+                            <p class="card-text text-muted text-date"> Posted on {{ post.posted_on }} </p>
+                            <a href="{{ post.get_absolute_url }}" class="btn btn-primary"> Read</a>
+                        </div>
+                      
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
+
+
 
 
 {% endblock %}

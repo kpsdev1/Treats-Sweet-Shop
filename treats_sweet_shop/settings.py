@@ -51,8 +51,15 @@ INSTALLED_APPS = [
     'reviews',
     'blog',
     'crispy_forms',
+    'django_summernote',
     'crispy_bootstrap5',
 ]
+
+SUMMERNOTE_THEME = 'bs5'
+
+SUMMERNOTE_CONFIG = {
+    'width': '100%',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

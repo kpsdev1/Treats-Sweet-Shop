@@ -91,6 +91,9 @@ footer {
     border-radius: 0;
 }
 
+.text-date {
+    font-size: small;
+}
 
 
 /* footer */
@@ -191,7 +194,7 @@ footer i {
 
     }
 
-    .title-test {
+    .title-text {
         font-size: medium !important;
         margin-top: 8%;
     }

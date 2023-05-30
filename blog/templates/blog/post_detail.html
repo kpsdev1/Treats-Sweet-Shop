@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4" >
+        <h2 class="text-center mb-4"> {{ post.title }}</h2> 
+        <p class="text-muted"> {{post.posted.on}} </p>
+        <img src="{{ post.image.url }}" class="card-img-top" alt="image from blog post">
+
+        {% if request.user.is_superuser %} 
+            <div class="d-flex justify-content-end mt-1">
+                <a href="{% url 'edit_post' post.pk %}" class="btn btn-xs me-1 btn-info" >Edit</a>
+                <button type="button" class="btn btn-xs btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#deletePostModal">Delete</button> 
+            </div>
+        {% endif %}
+
+            
+        <p> {{ post.body|safe }}</p>
+        
+      
+        <!-- This Modal is from bootstrapmodals page | this is for deleting the blog post-->
+        <div class="modal fade" id="deletePostModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="deleteModalLabel">Delete Review</h5>
+                      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Are you sure you want to delete the Blog post "{{ post.title }}"?</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                      <form action="{% url 'delete_post' pk=post.pk %}" method="POST">
+                        {% csrf_token %}
+                        <button class="btn btn-danger" value="Confirm">Yes</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        {% if user.is_authenticated %}
+        <div class="row g-0">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Post a Comment:</h5>
+                        <p>By: {{ user.username }}</p>
+                        <form method="post">
+                            {{ comment_form | crispy }}
+                            {% csrf_token %}
+                            <button type="submit" aria-label="Post Comment" class="btn btn-primary mt-2">Post</button>
+                        </form>
+        {% endif %}
+                    </div>       
+                </div>
+            </div>
+        </div>    
+           
+    </div>
+</div>
+    
+
+
+{% endblock %}

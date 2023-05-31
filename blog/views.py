@@ -92,3 +92,32 @@ class BlogDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
     success_url = reverse_lazy('blog')
     template_name = 'blog/blog.html'
     success_message = 'Blog Post has been deleted'
+
+
+class CommentUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+    """
+    This is the view to edit a Comment
+    """
+    model = Comment
+    template_name = 'blog/edit_comment.html'
+    form_class = CommentForm
+    
+    def get_success_url(self):
+        post = Post.objects.get(pk=self.object.post.pk)
+        messages.success(self.request, 'Comment has been Updated!')
+        return post.get_absolute_url()
+
+    
+
+
+class CommentDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
+    """
+    This is the view to delete a Comment
+    """
+    model = Comment
+
+    def get_success_url(self):
+        post = Post.objects.get(pk=self.object.post.pk)
+        messages.success(self.request, 'Comment has been deleted!')
+        return post.get_absolute_url()
+        

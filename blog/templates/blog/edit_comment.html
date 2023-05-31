@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4" >
+        
+        {% if user.is_authenticated %}
+        <div class="row g-0 mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Edit Your Comment:</h5>
+                        <p>By: {{ user.username }}</p>
+                        <form method="post">
+                            {{ form | crispy }}
+                            {% csrf_token %}
+                            <a href="javascript:history.go(-1)" class="btn btn-warning mt-2">Cancel</a>
+                            <button type="submit" aria-label="Post Comment" class="btn btn-primary mt-2">Post</button>
+                        </form>
+        {% endif %}
+                    </div>       
+                </div>
+            </div>
+        </div>    
+           
+    </div>
+</div>
+    
+
+
+{% endblock %}

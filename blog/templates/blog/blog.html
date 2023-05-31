@@ -24,7 +24,7 @@
                         <div class="card-body text-center">
                             <p class="card-text"> {{ post.title }}</p>
                             <p class="card-text text-muted text-date"> Posted on {{ post.posted_on }} </p>
-                            <a href="{{ post.get_absolute_url }}" class="btn btn-primary"> Read</a>
+                            <a href="{% url 'post_detail' post.id %}" class="btn btn-primary"> Read</a>
                         </div>
                       
                     </div>

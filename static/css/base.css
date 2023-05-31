@@ -83,6 +83,24 @@ footer {
     right: 10px;
 }
 
+/* icon */
+.text-icon {
+    color: #1e3050;
+}
+
+/* Delete and edit comment */
+.edit-comment {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+}
+
+.delete-comment {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
 /* extra small button */
 .btn-xs {
     padding: .35rem .4rem;

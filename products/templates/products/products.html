@@ -6,57 +6,60 @@
 
 <h1 class="text-center text-decoration-underline">Products</h1>
 <!-- sort dropdown -->
-<div class="row ">
-    <div class="col-10 offset-1 my-auto order-md-last d-flex justify-content-end">
-        <div class="dropdown">
-            <button class="btn btn-sm btn-secondary dropdown-toggle justify-content-end" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              SORT BY
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price(low to High)</a>
-              <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=desc">Price(High to Low)</a>
-              <a class="dropdown-item" href="{% url 'products' %}?sort=name&direction=asc">Name (A-Z)</a>
-              <a class="dropdown-item" href="{% url 'products' %}?sort=name&direction=desc">Name (Z-A)</a>
-            </div>
-          </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-10 offset-1">
-        <div class="row mt-1 mb-2"></div>
-            <div class="row">
-                {% for product in products %}
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-2">
-                    <div class="card h-100">
-                        {% if product.image %}
-                        <a href="{% url 'product_detail' product.id %}">
-                            <img src="{{ product.image.url }}" class="card-img-top" alt="">
-                        </a>    
-                        {% else %}
-                        <a href="{% url 'product_detail' product.id %}"></a>
-                            <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top img-fluid" alt="">
-                        </a>   
-                        {% endif %}
-                        <div class="card-body text-center">
-                            <p class="card-text"> {{ product.name }}</p>
-                        </div>
-                        <div class="card-footer text-center">
-                            <p>€{{ product.price }}</p>
-                            {% if product.category %}
-                            <p class="small mt-1 mb-0">
-                              <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                  <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                              </a>
-                            </p>
-                            {% endif %}
-                        </div>
-                    </div>
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-10 offset-1 my-auto order-md-last d-flex justify-content-end">
+            <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle justify-content-end" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SORT BY
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price(low to High)</a>
+                <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=desc">Price(High to Low)</a>
+                <a class="dropdown-item" href="{% url 'products' %}?sort=name&direction=asc">Name (A-Z)</a>
+                <a class="dropdown-item" href="{% url 'products' %}?sort=name&direction=desc">Name (Z-A)</a>
                 </div>
-                {% endfor %}
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-10 offset-1">
+            <div class="row mt-1 mb-2"></div>
+                <div class="row">
+                    {% for product in products %}
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-2">
+                        <div class="card h-100">
+                            {% if product.image %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img src="{{ product.image.url }}" class="card-img-top" alt="">
+                            </a>    
+                            {% else %}
+                            <a href="{% url 'product_detail' product.id %}"></a>
+                                <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top img-fluid" alt="">
+                            </a>   
+                            {% endif %}
+                            <div class="card-body text-center">
+                                <p class="card-text"> {{ product.name }}</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <p>€{{ product.price }}</p>
+                                {% if product.category %}
+                                <p class="small mt-1 mb-0">
+                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                </a>
+                                </p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
 </div>
+    
+
 {% endblock %}
 

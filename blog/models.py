@@ -9,7 +9,7 @@ class Post(models.Model):
         User, on_delete=models.CASCADE, default=1)
     posted_on = models.DateTimeField(auto_now_add=True)
     body = models.TextField(blank=False)
-    image = models.ImageField(null=True, blank=True,)
+    image = models.ImageField(null=True, blank=False,)
 
     class Meta:
         ordering = ('-posted_on',)

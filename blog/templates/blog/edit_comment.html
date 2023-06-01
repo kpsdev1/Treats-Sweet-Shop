@@ -3,7 +3,7 @@
 
 
 {% block content %}
-<div class="row">
+<div class="row g-0 mx-1">
     <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4" >
         
         {% if user.is_authenticated %}
@@ -16,8 +16,10 @@
                         <form method="post">
                             {{ form | crispy }}
                             {% csrf_token %}
-                            <a href="javascript:history.go(-1)" class="btn btn-warning mt-2">Cancel</a>
-                            <button type="submit" aria-label="Post Comment" class="btn btn-primary mt-2">Post</button>
+                            <div class="d-flex justify-content-end mb-4">
+                                <a href="javascript:history.go(-1)" class="btn btn-warning mt-2 me-1">Cancel</a>
+                                <button type="submit" aria-label="Post Comment" class="btn btn-primary mt-2">Post</button>
+                            </div>
                         </form>
         {% endif %}
                     </div>       

@@ -1,1 +1,1 @@
-web: gunicorn treats-sweet-shop.wsgi
+web: gunicorn treats_sweet_shop.wsgi:application

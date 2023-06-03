@@ -1,108 +1,76 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Treats Sweet Shop
+Treat Sweet Shop is a e-Commerce website that I build Using the Django Full Stack Frameworl for my fifth and final project at Code Institute.
+Treats Sweet shop is a online sweet store where users can purchase sweets from a wide variety, there is alos a secion on the website that allows users to leave review of their experience shoppping at Treats. I have also include a blog section where that admin can post blog and then registered users are able to comment underneath said blogs.
+  
+![Am i responsive image](readme-docs/images/amiresponsive.jpg)  
 
-Welcome kpsdev1,
+[Click Here To Visit Live Site](https://treats-sweet-shop.herokuapp.com/)  
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table Of Contents:
+1. [UX Design](#ux-design)
+    * [User Stories](#user-stories)
+    * [Wireframes](#wireframes)
+    * [Agile Methodology](#agile-methodology)
+    * [Typography](#typography)
+    * [Colour Scheme](#colour-scheme)
+    * [Database Diagram](#database-diagram)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+3. [Marketing](#marketing)
 
-## Gitpod Reminders
+2. [Features](#features)
+    * [Navigation](#Navigation-bar)
+    * [footer](#footer)
+    * [Home Page](#home-page)
+    * [Recipes Page](#recipes-page)
+    * [Recipe Details](#recipe-details)
+    * [Add Recipe Page](#add-recipe-page)
+    * [Edit Recipe Page](#edit-recipe-page)
+    * [Delete Recipe Page](#delete-recipe)
+    * [Edit Comment Page](#edit-comment-page)
+    * [Wines](#wines-page)
+    * [Wine Detail Page](#wine-details-page)
+    * [Add Wine Page](#add-wine-page)
+    * [Edit Wine Page](#edit-wine-page)
+    * [Delete Wine](#delete-wine)
+    * [Register Page](#register-page)
+    * [Login Page](#login-page)
+    * [Logout Page](#logout-page)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+3. [Future Features](#future-features)
+4. [Technologies Used](#technologies-used)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
+8. [Acknowledgements](#acknowledgements)
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+### User Stories
+Below are the user stories that were added to the Github project, They can be found [here](https://github.com/kpsdev1/Treats-Sweet-Shop/issues) in the issue section of the repository.
 
-Another blue button should appear to click: _Open Browser_.
+**EPIC | Navigation**
+- As a User I can easily navigate around the site so that I can view different pages and sections on the site.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+**EPIC - Registration & Login / Logout**
+- As a User I can Sign-in/ Sign-out so that I can access features when signed in and sign-out so that no one can access my account.
+- As a User I can Register an account so that I can use the full functionality of the site.
+- As a User I can register with my social media account so that I can sign up faster.
 
-Another blue button should appear to click: _Open Browser_.
+**EPIC - CRUD Functionality**
+- As a User I can view a list of products so that click on one to see the product details.
+- As a Superuser I can add a new product so that I can sell them on the site.
+- As a Superuser I can edit a product so that I can make changes to a product.
+- As a Superuser I can delete a product from the site.
+- As a User I can add a product to my shopping cart so that I can purchase it.
+- As a User I can Update my shopping cart so that I can change what's in my cart before checking out.
+- As a User I can remove a product from my cart so that can remove it an purchase the other items in my cart.
+- As a User I can Leave a review so that share my experience of shopping here.
+- As a User I can edit my review so that I can I can change it.
+- As a User I can Delete my review so that I can remove it.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Wireframes
+Below are the wireframes for the site that I created using balsamiq.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Agile Methodology
+Github projects was used to track the development of this website using the agile approach, the project can be found [here](https://github.com/users/kpsdev1/projects/6).

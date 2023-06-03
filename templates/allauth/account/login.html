@@ -7,9 +7,9 @@
 
 {% block inner_content %}
 
-<hr>
+<hr class="mt-5">
 <h2 class="logo-font mb-4 text-success">{% trans "Sign In" %}</h2>
-<hr>
+<hr class="mb-5">
 
 {% get_providers as socialaccount_providers %}
 
@@ -42,7 +42,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
   <button class="primaryAction btn-success" type="submit">{% trans "Sign In" %}</button>
-  <p class="mt-2">
+  <p class="mt-2 mb-5">
     <a class="button secondaryAction text-success" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
   </p>
 </form>

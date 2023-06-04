@@ -74,3 +74,18 @@ Below are the wireframes for the site that I created using balsamiq.
 
 ### Agile Methodology
 Github projects was used to track the development of this website using the agile approach, the project can be found [here](https://github.com/users/kpsdev1/projects/6).
+
+### Typography
+- The font that was used for the logo was **Ysabeau**.
+- **Montserrat** font was used for the body.
+
+### Colour Scheme
+For this site I decide to keep the main color scheme very simple, with the text being black or grey. The logo and the login/ logout page headings in green. I did also have some buttons like the delete, cancel, edit and post buttons red, orange and blue but the main color scheme of the site was black, white, grey.
+  
+![Colour scheme image](readme-docs/images/colors.jpg)  
+
+
+### DataBase Diagram
+Below is the database diagram that I created using LucidCharts.
+
+![Database Schema image](readme-docs/images/database_schema.jpg)  

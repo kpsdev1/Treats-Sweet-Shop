@@ -15,7 +15,7 @@ STARS = (
 
 
 class Review(models.Model):
-    """This is the model for wine"""
+    """This is the model for Review"""
     title = models.CharField(max_length=120, blank=False)
     rating = models.CharField(
         max_length=5, choices=STARS, default='5', blank=False)

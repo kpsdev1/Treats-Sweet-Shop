@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Ysabeau&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ysabeau&display=swap');
 
 
 /* ----this was added to keep footer at the bottom credit 30secondsofcode */
@@ -6,7 +6,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-   
+    font-family: 'montserrat', sans-serif;
+    
 }
 
 footer {

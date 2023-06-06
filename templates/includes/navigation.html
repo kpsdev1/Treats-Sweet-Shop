@@ -1,16 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand text-success logo" href="{% url 'home' %}">Treats<br>Sweet<br> Shop</a>
+    <a class="navbar-brand text-success logo {% if 'home' in request.path %} active {% endif %} " href="{% url 'home' %}">Treats<br>Sweet<br> Shop</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav center">
-        <a class="nav-item nav-link active" href="{% url 'home' %}">Home</a>
+        <!-- for some reason the active class would not world like the other using 'home' in request.path so i had to use the below tags that i found on stack overflow  -->
+        {% with request.resolver_match.url_name as url_name %}
+        <a class="nav-item nav-link {% if url_name == 'home' %} active {% endif %}" href="{% url 'home' %}">Home</a>
+        {% endwith %} 
 
         <!-- products dropdown -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+              <a class="nav-link dropdown-toggle {% if 'products' in request.path %} active {% endif %}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="{% url 'products' %}?category=jellies_candy">Jellies & Candy</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=chocolate">Chocolate</a>
@@ -21,8 +24,8 @@
           </li>
         </ul>
 
-        <a class="nav-item nav-link" href="{% url 'blog' %}">Blog</a>
-        <a class="nav-item nav-link" href="{% url 'reviews' %}">Reviews</a>
+        <a class="nav-item nav-link {% if 'blog' in request.path %} active {% endif %}" href="{% url 'blog' %}">Blog</a>
+        <a class="nav-item nav-link {% if 'reviews' in request.path %} active {% endif %}" href="{% url 'reviews' %}">Reviews</a>
       </div>
 
       <!-- search -->

@@ -15,6 +15,11 @@ footer {
   }
 /* ---------------------------------------------------------------- */
 
+/* active class to show the user what page they are on */
+.active {
+    font-weight: 600 !important;
+    
+}
 
 
 .center {
@@ -210,6 +215,12 @@ footer i {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.toast-close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
 }
 
 @media screen and (max-width: 991px) {

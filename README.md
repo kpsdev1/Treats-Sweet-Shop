@@ -89,8 +89,38 @@ For this site I decide to keep the main color scheme very simple, with the text 
 Below is the database diagram that I created using LucidCharts.
 
 ![Database Schema image](readme-docs/images/database_schema.jpg)  
+- - -
+
 
 ## Features
+
+### Navigation Bar
+- The Navigation bar sits at the very top of each page, The logo is at the right hand side and the navigation links are then to the left of the center of the page with the search, card and login/ register to the right hand side.
+- When logged in the links for **Login** and the **Registeration** change to **My Profile** and logout, if the user is a superuser then they will also have a **Add Product** link.
+- The Navbar background is a light grey which is colored using the the bootstrap **bg-info** class, the logo is green and the links are black in colour.
+- The active page (page that the user is currently on) is displayed in bold text, this makes it stand out much more and is clear to the user which page they are on.
+- When on medium to small screens the navigation menu changes to burger menu which shows all the nav links when clicked on.
+
+![Nav bar Image](readme-docs/images/nav.jpg)  
+
+### Footer
+- The footer is found at the bottom of every page and responsive for tablet and mobile too.
+- There are icon links to the business Instagram and Facebook page(please note these may have been removed byy facebook when you are reading this as they tend to remove fake pages).
+- Beneath this is an input box where the user enter their email address, which will allow them to suscribe to the shops newsletter
+- The background is also light grey like the Navigation bar.
+
+![footer](readme-docs/images/footer.jpg) 
+
+### Home Page
+- The home page has 2 large images that both take up 50% of the screen width on large devices and 100% on small and medium screens.
+- The image on the left is a image that i created using illustrator that syas **Treat Yourself** and then underneather the text there nis a button that says **Shop Now**, which once clicked will bring users to the all products page.
+- The image on the right is a picture of different sweets on a table.
+
+![HomePage](readme-docs/images/home.png) 
+- - -  
+
+
+
 
 ## Future Features
 

@@ -4,7 +4,10 @@
 
 {% block content %}
 
-
+    <a href="{% url 'account_login' %}" class="text center mb-3 text-dark {% if user.is_authenticated %} d-none {% endif %}">
+        Please log in to read the blogs
+    </a>
+    
 
     <div class="row g-0">
         <div class="col-10 offset-1">
@@ -13,7 +16,7 @@
                         <div>
                             <a href="{% url 'add_post' %}" class="btn btn-success btn-sm mb-2">Add Post</a>
                         </div>
-                        {% endif %}
+                    {% endif %}
 
                     {% for post in post_list %}
                     <div class="col-12 col-md-6 col-lg-4 mb-2">

@@ -42,7 +42,7 @@
     </div>
 
       <!-- profile dropdown -->
-      <ul class="navbar-nav mr-auto ps-md-5">
+      <ul class="navbar-nav mr-auto ps-md-5 me-md-4">
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user"></i></a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -60,7 +60,7 @@
                 
           </li>
       </ul>
-      <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-item nav-link pe-md-5 ps-0 ps-md-2" href="{% url 'view_cart' %}">
+      <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-item nav-link me-md-5 ps-0 ps-md-2" href="{% url 'view_cart' %}">
         <i class="fa-solid fa-bag-shopping mt-md-4"></i>
         <p class="my-0">
           {% if grand_total %}

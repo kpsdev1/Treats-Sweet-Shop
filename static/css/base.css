@@ -212,6 +212,12 @@ footer i {
     overflow-y: auto;
 }
 
+@media screen and (max-width: 991px) {
+    .navbar a, .navbar form {
+        margin-left: 3px !important;
+    }
+
+}
 
 /* extra small screens */
 @media screen and (max-width: 420px) {

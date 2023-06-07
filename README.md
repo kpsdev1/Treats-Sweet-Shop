@@ -109,7 +109,8 @@ Below is the database diagram that I created using LucidCharts.
 - Beneath this is an input box where the user enter their email address, which will allow them to suscribe to the shops newsletter
 - The background is also light grey like the Navigation bar.
 
-![footer](readme-docs/images/footer.jpg) 
+![footer](readme-docs/images/footer.jpg)
+- - -
 
 ### Home Page
 - The home page has 2 large images that both take up 50% of the screen width on large devices and 100% on small and medium screens.
@@ -120,7 +121,35 @@ Below is the database diagram that I created using LucidCharts.
 - - -  
 
 
+### Products Page
+- At the top of the Products page, right below the Nav bar there is a H1 heading that says **Products** which is underlined and centered.
+- Below this are the Product cards which are displayed in the bootstrap card format, they are displayed 4 across on x-large screens, 3 cross on large screens, 2 on small and medium and 1 accross on x-small screens which makes the page fully resonsive to all devices.
+- On the right hand side above the products is a sort filter, where the user can sort by price, low to high or high to low and also can search alphabetically from A-Z or from Z-A.
+- Each product displays a picture of the product, the name of it, the price and the category it is in, if the user clicks on the picture it will bring them to the product detail page where they can purchase a product.
 
+![Products](readme-docs/images/products.png) 
+- - -
+
+
+### Product Details Page
+- On the products detail you will see the product image on the left and on mobile and small devices this will be the full width bar some padding.
+- On the right of this you will have the product name, the price, a description, the category and if the user is an admin you will also see a delete and edit button. 
+- Then you will see a quantity selector that can be increased or decrease by the **+** or **-** signs. Below the quantity sign there is a back button that will bring you **Back** to products when clicked and there is also an **Add to cart** button that will add the product to your cart so you can purchase.
+
+
+![Product details](readme-docs/images/product-details.png) 
+- - -
+
+### Shopping Cart Page
+- When a user adds a product to thir cart it is deisplayed in the shopping cart page, the user can add multiple products to their cart
+- At the top you will see a H2 heading saying **shopping cart** with a horizontial line above and below it.
+- Then you will see 4 table headings which will say **Product Info**, **Price**, **Qty**, **Subtotal**.
+- In the **Product Info** column you will see a small picture of the product and the product name, in the **Price** colument you will see the price for each product. In the **Qty** you will see the quantity which you can change with the selector and click update, There is also a button to remove a product here. Then in the **Subtotal** column you will see the subtotal price for each item.
+- Below the products that are in the shopping cartt towards the right you will see the **Cart Total** and below this the **Delivery** which when added together will give you the **Grand Total**, beneath the grand total in red it will tell you how much more you need to spend to get free deleivery if you havent already surpased it.
+- The we have a **back** button which will bring the user back to the **Products** page and a **Secure Checkout** button which will bring the user to the secure checkout.
+
+![Shopping cart](readme-docs/images/cart.png) 
+- - -
 
 ## Future Features
 

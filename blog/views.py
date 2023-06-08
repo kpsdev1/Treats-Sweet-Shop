@@ -10,14 +10,17 @@ from .forms import PostForm, CommentForm
 
 
 class BlogListView(ListView):
-    # view to deisplay reviews
+    """
+    View to Display Posts
+    """
     template_name = 'blog/blog.html'
     model = Post
 
 
 class BlogDetailView(LoginRequiredMixin, DetailView):
-    # display the blog details page
-
+    """
+    View to display the blog details page
+    """
     def get(self, request, pk, *args, **kwargs):
         post = get_object_or_404(Post.objects, pk=pk)
         comments = post.comments.order_by("-posted_on")
@@ -57,11 +60,13 @@ class BlogDetailView(LoginRequiredMixin, DetailView):
                 "comment_form": CommentForm()
             },
         )
-        
 
-# #########################################################################
+
+
 class BlogCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
-    # create a post
+    """
+    create a post
+    """
     model = Post
     template_name = 'blog/add_post.html'
     form_class = PostForm
@@ -76,7 +81,7 @@ class BlogCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
 
 class BlogUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     """
-    This is the view to edit a review
+    This is the view to edit a a post
     """
     model = Post
     template_name = 'blog/edit_post.html'
@@ -86,7 +91,7 @@ class BlogUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
 
 class BlogDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
     """
-    This is the view to delete a review
+    This is the view to delete a post
     """
     model = Post
     success_url = reverse_lazy('blog')

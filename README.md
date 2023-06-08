@@ -21,6 +21,8 @@ Treats Sweet shop is a online sweet store where users can purchase sweets from a
     * [Navigation](#Navigation-bar)
     * [footer](#footer)
     * [Home Page](#home-page)
+    * [Products Page](#products-page)
+    * [Product Detail Page](#product-detail-page)
     
 
 3. [Future Features](#future-features)
@@ -133,10 +135,85 @@ Below is the database diagram that I created using LucidCharts.
 - Then you will see 4 table headings which will say **Product Info**, **Price**, **Qty**, **Subtotal**.
 - In the **Product Info** column you will see a small picture of the product and the product name, in the **Price** colument you will see the price for each product. In the **Qty** you will see the quantity which you can change with the selector and click update, There is also a button to remove a product here. Then in the **Subtotal** column you will see the subtotal price for each item.
 - Below the products that are in the shopping cartt towards the right you will see the **Cart Total** and below this the **Delivery** which when added together will give you the **Grand Total**, beneath the grand total in red it will tell you how much more you need to spend to get free deleivery if you havent already surpased it.
-- The we have a **back** button which will bring the user back to the **Products** page and a **Secure Checkout** button which will bring the user to the secure checkout.
+- Then  we have a **back** button which will bring the user back to the **Products** page and a **Secure Checkout** button which will bring the user to the secure checkout.
 
 ![Shopping cart](readme-docs/images/cart.png) 
 - - -
+
+### Checkout Page
+- On the check out page at the top you will see a H2 heading that is centered and says **Checkout** with a horizontal line above and below it.
+- Beneath this is the order summary which will show a **small picture of the items**, the **name of the product**, the **quantiity**, **the price**, the **delivery** and the **grand total**.
+- Then there is the form where the user will have to fill out the form with their **name**, **email**, phone and **address details**. There is also a buton to check that will save the info you have enterd to your profile.
+- Then there is the payment input where a user can enter their card details which will then be processed through **Stripe payments** when they click the **complete oorder** button below it.
+- Beside the **complete oorder** button there is a **Back** button which will bring the user back to their cart, underneath the buttons in red writing you will see text saying how mcuh your card will be charged.
+
+![Checkout page](readme-docs/images/checkout.png) 
+
+### Blog Page
+- On the blog page you will see a link that says **Please log in to read the blogs** and when clicked will bring the user to the sign in page,k where they can sign in or register, only users who are signed in can read each blog post(this link will not be visible if the user is signed in).
+- Beneath this you will see the blog post in bootstrap card format which will show a picture, the title of the blog post, the date it was posted on and a blue **Read** button. If the user is not signed in when they click the read button it will bring them to the sign in page.
+- If the user is an admin, then above the blog posts on the left side there will be a blue button that says **Add Post** which when clicked will bring the admin to a form where they can enter a new blog post.
+
+![Blog page](readme-docs/images/blog.png) 
+
+### Post Detail page
+- At the top of the Post details you will have the Post title displayed using a h2 heading tag, directly below this will then be the image of the blog post sand then below that will be thePost body which will display the main text of a post. Everything is in the centered bar on small and extra small devices where they take up nearly the full width of the screen.
+- Below the Post body there is a comment section that will show any comments posted by users(users need to signed in to view the blog post and to also comment)
+- Under the comment section there is a **Post A comment** box where a user can enter their comment and when they click post it will be displayed in the comment section. The user will also see a delete and edit button at the top right of their posted comments, if they click the delete button a bootstrap modal will appear asking them to confirm the deletion. If the user clicks the edit button they will be taken to another page that has a comment box with their posted comment in there for them to edit.
+- If the user is an admin right below the image on the right side there will be an edit and delete button, if they click the delete button a bootstrap modal will appear asking them to confirm the deletion and if they click the edit button they will be taken to a prefilled form where they can edit the post.
+
+![Post Detail page](readme-docs/images/post-detail.png) 
+
+
+**Delete Comment Modal**
+![Delete Comment modal](readme-docs/images/delete-comment.jpg) 
+
+
+**Edit Comment Page**
+![Edit comment page](readme-docs/images/edit-comment.png) 
+
+
+**Delete Post Modal**
+![Delete Post modal](readme-docs/images/delete-post.jpg) 
+
+
+**Edit Post Page**
+![Edit Post page](readme-docs/images/edit-post.png) 
+- - -
+
+### Reviews Page
+- At the top of the review page int the center is H1 heading that says **Cutomer Reviews**.
+- If the users is signed in then there is a green **Add A Review** button to the right just above the most recent review.
+- Then below this are the reviews the revies are each in a light grey colored box, at the top right of the box is the review title then oppiste this at the left hand side is the review stars which can be from 1 - 5.
+- Below the title is the username of the person who posted the review and then underneath this is the body of the review, where the user can write a fully detailed review of the site.
+- Then at the bottom write of the review you will see the date and thim of which it was psoted on.
+- At the bottom left there is a edit and delete button that is visible to the user who psoted the review, the delete button is orange and when click brings up a bootstrap modal asking the user if they want to confirm the deletion. Then beside this is blue edit button which allows the user to edit their review.
+
+![Review Page](readme-docs/images/reviews.png) 
+- - -
+
+### Add Review
+- At the top of the page is a centered H2 heading that says **Write a Review** with a horizontal line above and below it.
+- Then there is the form below it with the field of **Title**, **Body**, and the **Rating** which is a drop down whith choices from 1 - 5.
+- At the bottom right there is a yellow **Cancel** button that when clciked will bring the user back to the review page, beside this there is a green**Submit** button that once clciked will submit the form and bring the user back to the reviews page where they will see their freshly posted review.
+
+![Add Review Page](readme-docs/images/add-review.png) 
+
+
+### Edit Review
+- This is exactly like the **Add Review** page only the H2 heading at the top says **Edit Your Review** and has the form already prpoulated with their previous review so that they can edit it.
+
+![Edit Review Page](readme-docs/images/edit-review.png) 
+- - -
+
+### Add Product
+- This page is only availabe to admins so that they can add a product to the site, on the topn of the page is a H2 heading that is centered and says **Add a Product** with a horizontal line above and below it.
+- Below this we have the form with the first input **category** being a drop down, there there is the other inputs **Sku**, **Name**, **Type**, **Description**, **Price**, **Image Url** and **Image**.
+- Then below the form on the right is a yellow **Cancel** button that when clicked will bring the admin back tot the products page, beside it is a green **Add Product** button that will add the product to the porducts page once clicked and as logn as the form is filled out.
+
+![Add Product Page](readme-docs/images/add-product.png) 
+- - -
+
 
 ## Future Features
 

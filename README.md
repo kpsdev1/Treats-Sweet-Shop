@@ -23,7 +23,14 @@ Treats Sweet shop is a online sweet store where users can purchase sweets from a
     * [Home Page](#home-page)
     * [Products Page](#products-page)
     * [Product Detail Page](#product-detail-page)
-    
+    * [Shopping Cart Page](#shopping-cart-page)
+    * [Checkout Page](#checkout-page)
+    * [Blog Page](#blog-page)
+    * [Blog Detail Page](#blog-detail-page)
+    * [Reviews Page](#reviews-page)
+    * [Add Review Page](#add-review-page)
+    * [Edit Review Page](#Edit-review-page)
+    * [Add Product Page](#add-product-page)
 
 3. [Future Features](#future-features)
 4. [Technologies Used](#technologies-used)
@@ -192,7 +199,7 @@ Below is the database diagram that I created using LucidCharts.
 ![Review Page](readme-docs/images/reviews.png) 
 - - -
 
-### Add Review
+### Add Review Page
 - At the top of the page is a centered H2 heading that says **Write a Review** with a horizontal line above and below it.
 - Then there is the form below it with the field of **Title**, **Body**, and the **Rating** which is a drop down whith choices from 1 - 5.
 - At the bottom right there is a yellow **Cancel** button that when clciked will bring the user back to the review page, beside this there is a green**Submit** button that once clciked will submit the form and bring the user back to the reviews page where they will see their freshly posted review.
@@ -200,13 +207,13 @@ Below is the database diagram that I created using LucidCharts.
 ![Add Review Page](readme-docs/images/add-review.png) 
 
 
-### Edit Review
+### Edit Review Page
 - This is exactly like the **Add Review** page only the H2 heading at the top says **Edit Your Review** and has the form already prpoulated with their previous review so that they can edit it.
 
 ![Edit Review Page](readme-docs/images/edit-review.png) 
 - - -
 
-### Add Product
+### Add Product Page
 - This page is only availabe to admins so that they can add a product to the site, on the topn of the page is a H2 heading that is centered and says **Add a Product** with a horizontal line above and below it.
 - Below this we have the form with the first input **category** being a drop down, there there is the other inputs **Sku**, **Name**, **Type**, **Description**, **Price**, **Image Url** and **Image**.
 - Then below the form on the right is a yellow **Cancel** button that when clicked will bring the admin back tot the products page, beside it is a green **Add Product** button that will add the product to the porducts page once clicked and as logn as the form is filled out.

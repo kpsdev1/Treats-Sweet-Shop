@@ -67,6 +67,50 @@ Below are the user stories that were added to the Github project, They can be fo
 ### Wireframes
 Below are the wireframes for the site that I created using balsamiq.
 
+<details>
+    <summary>Home Page</summary>  
+
+![Wireframe of home page](readme-docs/wireframes/home-wireframe.jpg)  
+</details>
+
+<details>
+    <summary>Products Page</summary>  
+
+![Wireframe of Products page](readme-docs/wireframes/products-wireframe.jpg)  
+</details>
+
+<details>
+    <summary>Blog Page</summary>  
+
+![Wireframe of Blog page](readme-docs/wireframes/blog-wireframe.jpg)  
+</details>
+
+<details>
+    <summary>Blog Details Page</summary>  
+
+![Wireframe of Blog Details page](readme-docs/wireframes/blog-details-wireframe.jpg)  
+</details>
+
+<details>
+    <summary>Reviews Page</summary>  
+
+![Wireframe of Reviews page](readme-docs/wireframes/reviews-wireframe.jpg)  
+</details>
+
+<details>
+    <summary>Login Page</summary>  
+
+![Wireframe of Login page](readme-docs/wireframes/login-wireframe.jpg)  
+</details>
+
+<details>
+    <summary>Register Page</summary>  
+
+![Wireframe of Register page](readme-docs/wireframes/register-wireframe.jpg)  
+</details>
+
+
+
 
 ### Agile Methodology
 Github projects was used to track the development of this website using the agile approach, the project can be found [here](https://github.com/users/kpsdev1/projects/6).

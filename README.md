@@ -66,6 +66,7 @@ Below are the user stories that were added to the Github project, They can be fo
 
 ### Wireframes
 Below are the wireframes for the site that I created using balsamiq.
+Please note the finished product differed a bit from the wireframes.
 
 <details>
     <summary>Home Page</summary>  

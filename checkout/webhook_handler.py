@@ -5,6 +5,7 @@ from django.template.loader import render_to_string
 from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import ClientProfile
+from django.conf import settings
 
 import json
 import time

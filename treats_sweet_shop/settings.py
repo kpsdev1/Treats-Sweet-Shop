@@ -81,7 +81,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
-r"^https://kit.fontawesome.com/33f136dc9b.js",
+    r"^https://kit.fontawesome.com/33f136dc9b.js",
 ]
 
 ROOT_URLCONF = 'treats_sweet_shop.urls'
@@ -102,7 +102,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'cart.contexts.cart_contents',
-                
+
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
@@ -129,7 +129,6 @@ LOGOUT_REDIRECT_URL = '/account/login/'
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
-
 
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
@@ -222,7 +221,7 @@ if 'USE_AWS' in os.environ:
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-     # Static and media files
+    # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'

@@ -288,7 +288,7 @@ Below is the database diagram that I created using LucidCharts.
 - - -
 
 ## Testing
-
+The testing section can be found [here](TESTING.md).
 
 ## Deployment
 This website is deployed to Heroku from a github repository, the following steps were taken:

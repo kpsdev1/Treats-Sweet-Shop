@@ -7,6 +7,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'montserrat', sans-serif;
+   
+    
     
 }
 
@@ -228,6 +230,11 @@ footer i {
         margin-left: 3px !important;
     }
 
+    .qty-font {
+        font-size: .8rem;
+
+    }
+
 }
 
 /* extra small screens */
@@ -248,6 +255,26 @@ footer i {
         font-size: x-small;
 
     }
-   
+    /* nav bar */
+    .nav-link, .dropdown-item {
+        font-size: .9rem;
+    }
+
+    .navbar-toggler-icon {
+        height: 22px !important;
+        width: 22px !important;
+    }
+    
 
 }
+
+
+@media screen and (max-width: 340px) {
+    .message-container {
+        right: 10px;
+        width: 300px;
+        
+    }
+
+}
+

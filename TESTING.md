@@ -47,6 +47,7 @@
 </details>
 - - -
 
+
 ##### Review App
 <details>
     <summary>admin.py</summary>  
@@ -78,6 +79,7 @@
 ![image of Python testing review views.py file](readme-docs/images/review-views.jpg)  
 </details>
 - - -
+
 
 ##### Profiles App
 <details>
@@ -111,6 +113,7 @@
 </details>
 - - -
 
+
 ##### Products App
 <details>
     <summary>admin.py</summary>  
@@ -142,6 +145,7 @@
 ![image of Python testing products views.py file](readme-docs/images/products-views.jpg)  
 </details>
 - - -
+
 
 ##### Checkout App
 <details>
@@ -193,6 +197,7 @@
 </details>
 - - -
 
+
 ##### Cart App
 <details>
     <summary>admin.py</summary>  
@@ -224,6 +229,7 @@
 ![image of Python testing cart views.py file](readme-docs/images/cart-views.jpg)  
 </details>
 - - -
+
 
 ##### Blog App
 <details>

@@ -4,9 +4,9 @@ from django_summernote.admin import SummernoteModelAdmin
 # Register your models here.
 
 
-class CommentInline(admin.TabularInline): # new
+class CommentInline(admin.TabularInline):
     model = Comment
-    extra = 0 #
+    extra = 0
 
 
 class BlogAdmin(admin.ModelAdmin):

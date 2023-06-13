@@ -24,7 +24,7 @@ class BlogDetailView(LoginRequiredMixin, DetailView):
     def get(self, request, pk, *args, **kwargs):
         post = get_object_or_404(Post.objects, pk=pk)
         comments = post.comments.order_by("-posted_on")
-       
+
         return render(
             request,
             "blog/post_detail.html",
@@ -36,7 +36,7 @@ class BlogDetailView(LoginRequiredMixin, DetailView):
         )
 
     def post(self, request, pk, *args, **kwargs):
-        
+
         post = get_object_or_404(Post.objects, pk=pk)
         comments = post.comments.order_by("-posted_on")
         comment_form = CommentForm(data=request.POST)
@@ -60,7 +60,6 @@ class BlogDetailView(LoginRequiredMixin, DetailView):
                 "comment_form": CommentForm()
             },
         )
-
 
 
 class BlogCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
@@ -106,13 +105,11 @@ class CommentUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Comment
     template_name = 'blog/edit_comment.html'
     form_class = CommentForm
-    
+
     def get_success_url(self):
         post = Post.objects.get(pk=self.object.post.pk)
         messages.success(self.request, 'Comment has been Updated!')
         return post.get_absolute_url()
-
-    
 
 
 class CommentDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
@@ -125,4 +122,3 @@ class CommentDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
         post = Post.objects.get(pk=self.object.post.pk)
         messages.success(self.request, 'Comment has been deleted!')
         return post.get_absolute_url()
-        

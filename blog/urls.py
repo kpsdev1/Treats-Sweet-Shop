@@ -4,9 +4,13 @@ from .views import *
 
 
 urlpatterns = [
-    path('<int:pk>/edit_comment/', CommentUpdateView.as_view(), name='edit_comment'),
     path(
-        '<int:pk>/delete_comment/', CommentDeleteView.as_view(), name='delete_comment'
+        '<int:pk>/edit_comment/', CommentUpdateView.as_view(),
+        name='edit_comment'
+        ),
+    path(
+        '<int:pk>/delete_comment/', CommentDeleteView.as_view(),
+        name='delete_comment'
         ),
     path(
         '<int:pk>/delete_post/', BlogDeleteView.as_view(), name='delete_post'

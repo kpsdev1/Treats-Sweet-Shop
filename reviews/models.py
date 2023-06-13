@@ -3,7 +3,6 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 
 
-
 # Create your models here.
 STARS = (
     ('1', '1'),

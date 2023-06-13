@@ -32,9 +32,9 @@
       <div class="col-11 col-lg-2 my-auto py-1 py-lg-0">
         <form method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
-                <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our Site">
                 <div class="input-group-append">
-                    <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                    <button class="form-control btn btn-black border border-black rounded-0" type="submit" aria-label="search button">
                         <span class="icon">
                             <i class="fas fa-search"></i>
                         </span>
@@ -47,8 +47,8 @@
       <!-- profile dropdown -->
       <ul class="navbar-nav mr-auto ps-md-5 me-md-4">
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user"></i></a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownprofile" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user"></i></a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownprofile">
                 {% if user.is_authenticated %}
                   {% if request.user.is_superuser %}
                   <a href="{% url 'add_product' %}" class="dropdown-item">Add Product</a>

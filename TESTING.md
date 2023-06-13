@@ -45,7 +45,6 @@
     
 ![image of Python testing home views.py file](readme-docs/images/home-views.jpg)  
 </details>
-- - -  
   
 
 ##### Review App
@@ -78,7 +77,6 @@
     
 ![image of Python testing review views.py file](readme-docs/images/review-views.jpg)  
 </details>
-- - -  
 
   
 ##### Profiles App
@@ -111,7 +109,6 @@
     
 ![image of Python testing profiles views.py file](readme-docs/images/profile-views.jpg)  
 </details>
-- - -  
 
 
 ##### Products App
@@ -144,7 +141,6 @@
     
 ![image of Python testing products views.py file](readme-docs/images/products-views.jpg)  
 </details>
-- - -  
   
 
 ##### Checkout App
@@ -195,7 +191,6 @@
     
 ![image of Python testing checkout webhook.py file](readme-docs/images/checkout-webhook-handler.jpg)  
 </details>
-- - -  
   
 
 ##### Cart App
@@ -228,7 +223,6 @@
     
 ![image of Python testing cart views.py file](readme-docs/images/cart-views.jpg)  
 </details>
-- - -  
   
 
 ##### Blog App

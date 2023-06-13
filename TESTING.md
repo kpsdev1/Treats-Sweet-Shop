@@ -258,3 +258,48 @@
 
 *Just to note, the settings.py file gave some **line too long** errors which are related to the default authorization, which I was told can be ignored in this file so I added the **Noqa** comment to them so that the linter would not read them, I also added the comment on a few lines through the project that did not make sense to breakup*  
 - - -  
+
+### Lighthouse
+Lighthouse in chrome dev tools was used to generate a report that tests the sites Performance, Accessibility, Best Practices and Seo.
+
+<details>
+    <summary>Home</summary>  
+    
+![Home lighthouse test](readme-docs/images/lighthouse-home.jpg)  
+</details>
+
+<details>
+    <summary>Products</summary>  
+    
+![products lighthouse test](readme-docs/images/lighthouse-products.jpg)  
+</details>
+
+<details>
+    <summary>Blog</summary>  
+    
+![blog lighthouse test](readme-docs/images/lighthouse-blog.jpg)  
+</details>
+
+<details>
+    <summary>Blog Details</summary>  
+    
+![blog betails lighthouse test](readme-docs/images/lighthouse-blog-details.jpg)  
+</details>
+
+<details>
+    <summary>Reviews</summary>  
+    
+![reviews lighthouse test](readme-docs/images/lighthouse-reviews.jpg)  
+</details>
+
+<details>
+    <summary>Register</summary>  
+    
+![register lighthouse test](readme-docs/images/lighthouse-register.jpg)  
+</details>
+
+<details>
+    <summary>Sign In</summary>  
+    
+![sign in lighthouse test](readme-docs/images/lighthouse-signin.jpg)  
+</details>

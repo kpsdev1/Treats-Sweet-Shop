@@ -308,14 +308,58 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 ## User Story Testing
 
 
-#### EPIC | Navigation
+#### Navigation
 *As a User I can easily navigate around the site so that I can view different pages and sections on the site.*
 - The Navigation at the top of the page is easy to navigate and the current page link is bold which clearly indicates what page you are on.
 
-#### EPIC - Registration & Login / Logout
+
+#### Registration
+*As a User I can Register an account so that I can use the full functionality of the site.*
+- In the Navigation bar at the top of the page, if a User clicks on the Register link, they will be brought to the registeration page wehere they can sign up, once they sign up they will be able to access full functionality of the site.
+
+
+#### Login / Logout
 *As a User I can Sign-in/ Sign-out so that I can access features when signed in and sign-out so that no one can access my account.*
 - When a User is not logged in the login link will be visible in at the in the navigation bar, the same link will change to logut when the user is logged in.
 - When the User enters their login credentials they will be able to access the full fuctionality of the site, when the user is logged out they will not have full access on the site and their account will be secure.
 
-*As a User I can Register an account so that I can use the full functionality of the site.*
-- In the Navigation bar at the top of the page, if a User clicks on the Register link, they will be brought to the registeration page wehere they can sign up, once they sign up they will be able to access full functionality of the site.
+#### View Products
+*As a User I can view a list of products so that I click on one to see the product details.*
+- The user is able to click the Products link in the nav bar and this will show a drop down bar where they can select all products or the sweet type they wish to view, which will then bring them to a products page where they can view all or the selected category products.
+- If they wish to view a product and purchase they can click on the product image and this will bring them to the product details page where the user is able to order.
+
+#### Add Products
+*As a Superuser I can add a new product so that I can sell them on the site.*
+- When an admin is logged in with a superuser account there will be an add product link in the naviagation, when this is clicked it will bring them to the add product page where they can fill in the form and add another product.
+
+#### Edit Products
+*As a Superuser I can edit a product so that I can make changes to a product.*
+- When an admin is logged in with a superuser account, on the product details page there will be a **edit** button, when the edit button is clikcked it will bring the admin to a prefilled in form with all the orginal product details there so that they can edit it.
+
+#### Delete Products
+*As a Superuser I can delete a product from the site.*
+- When an admin is logged in with a superuser account, on the product details page there will be a **delete** button, when the delete button is clicked the product will be removed from the site and the database.
+
+#### Add product to cart
+*As a User I can add a product to my shopping cart so that I can purchase it.*
+- When the user is on the products details page they can click on the blue **Add to Cart** button this will then add the product to their shopping cart, they can also choose the quantity before clicking **Add to Cart**
+
+#### Update Cart
+*As a User I can Update my shopping cart so that I can change what's in my cart before checking out.*
+- When the user is on the shopping cart page(they can click the shopping cart icon in the Nav bar to access it) they can change the quantity of the porudcts they have in their cart by using the quantity selector and then clicking the update button.
+
+#### Remove from Cart
+*As a User I can remove a product from my cart so that can remove it an purchase the other items in my cart.*
+- When the user is on the shopping cart page(they can click the shopping cart icon in the Nav bar to access it) under each item in there cart there will be a remove button, when they click the remove button this will remove the product.
+
+#### Leave a Review
+*As a User I can Leave a review so that share my experience of shopping here.*
+- If the user is signed in they can go to the Reviews page where they they will see a green **Add A Review** button which they can click and this will bring them to a form where they can fillin their review, once the review is posted then it will be visible on the reviews page.
+
+#### Edit a Review
+*As a User I can edit my review so that I can I can change it.*
+- In the top right of a review that the user has left there is an **edit** button that when clicked it will bring them to pre filled form with their review so that they can edit it. A user can only edit a review they have posted.
+
+#### Delete a Review
+*As a User I can Delete my review so that I can remove it.*
+- In the top right of a review that the user has left there is an **Delete** button that when clicked it will bring up a bootstrap modal asking thuser to confim their deletion, oce comfirmed then the review will be removed . A user can only delete a review they have posted.

@@ -53,7 +53,7 @@ Below are the user stories that were added to the Github project, They can be fo
 - As a User I can register with my social media account so that I can sign up faster.
 
 **EPIC - CRUD Functionality**
-- As a User I can view a list of products so that click on one to see the product details.
+- As a User I can view a list of products so that I click on one to see the product details.
 - As a Superuser I can add a new product so that I can sell them on the site.
 - As a Superuser I can edit a product so that I can make changes to a product.
 - As a Superuser I can delete a product from the site.

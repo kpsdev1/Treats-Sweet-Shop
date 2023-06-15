@@ -303,3 +303,19 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
     
 ![sign in lighthouse test](readme-docs/images/lighthouse-signin.jpg)  
 </details>
+
+
+## User Story Testing
+
+
+#### EPIC | Navigation
+*As a User I can easily navigate around the site so that I can view different pages and sections on the site.*
+- The Navigation at the top of the page is easy to navigate and the current page link is bold which clearly indicates what page you are on.
+
+#### EPIC - Registration & Login / Logout
+*As a User I can Sign-in/ Sign-out so that I can access features when signed in and sign-out so that no one can access my account.*
+- When a User is not logged in the login link will be visible in at the in the navigation bar, the same link will change to logut when the user is logged in.
+- When the User enters their login credentials they will be able to access the full fuctionality of the site, when the user is logged out they will not have full access on the site and their account will be secure.
+
+*As a User I can Register an account so that I can use the full functionality of the site.*
+- In the Navigation bar at the top of the page, if a User clicks on the Register link, they will be brought to the registeration page wehere they can sign up, once they sign up they will be able to access full functionality of the site.

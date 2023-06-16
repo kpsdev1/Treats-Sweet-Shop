@@ -429,6 +429,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Admin only  | Make sure only a site admin can access this page.                            | Pass      |
 | Display form  | Check to see if all input fields display correctly.                                  | Pass      |
 | Submit filled out form  | Fill out all the form and click the Add Product button at the bottom of the page. | Pass      |
 | Leave Image field blank on submission  | Check to make sure image place holder displays after submititng. | Pass      |
@@ -442,8 +443,139 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Admin only  | Make sure only a site admin can access this page.                            | Pass      |
 | Display form  | Check to see if all input fields display with the orginal product details.   | Pass      |
 | Update form  | Update the form and click the Update product button at the bottom of the page and check if the product has been updated. | Pass      |
 | Update Product Button | On click it will Update the product, and bring the user to the products page where the updated product can be seen. | Pass      |
 | Cancel Button | On click it will bring the user back to the Products list.                  | Pass      |
 | Success Message | Success message is displayed at the top right of the screen when a user clicks Update Product. | Pass      |
+
+
+#### Blog 
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Post cards   | Check to make sure each post card display correctly.                        | Pass      |
+| Read Button (when signed in)  | When clicked brings the user to the post details page      | Pass      |
+| Read Button (when signed out)  | When clicked brings the login page     | Pass      |
+| Add Post button  | Is only visible when  a superuser is signed in and when clicked briung the admin to the Add post page     | Pass      |
+
+
+#### Add Post Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Admin only  | Make sure only a site admin can access this page.                            | Pass      |
+| Display form  | Check to see if all input fields display correctly.                                  | Pass      |
+| Submit filled out form  | Fill out all the form and click the Submit button at the bottom of the page. | Pass      |
+| Leave an Input field blank | Check to make sure form wont submit, and will display warnings. | Pass      |
+| Submit Button | On click it will submit the Post and bring the admin back to the blog page where they will see the post. | Pass      |
+| Cancel Button | On click it will bring the admin back to the blog page.                  | Pass      |
+| Success Message | Success message is displayed at the top right of the screen when a user clicks submit.  | Pass      |
+
+
+#### Post Details Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Post Content   | Make sure the post content displays correctly.                         | Pass      |
+| Edit Button   | When clicked brings the admin to the edit post form, this is only visible to a superuser.            | Pass      |
+| Delete Button  | When clicked this will bring up a delete modal form the admin to confim the deletion, this is only visible to a superuser.        | Pass      |
+| Comment section  | Make sure all comments diplay correctly   | Pass      |
+| Edit comment Button | This is only visible to the user who posted the comment and is in the top right of the comment, when clicked will bring a user to the edit comment page.  | Pass      |
+| Delete comment Button | This is only visible to the user who posted the comment and is in the top right of the comment, when clicked will bring up a bootstrap mopdal asking the user to confirm the deletion.  | Pass      |
+| Post comment   | When clicked posts the comment that a user has entered in the comment box, this will then be visible in the comment section.     | Pass      |
+
+
+#### Edit Post Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Admin only  | Make sure only a site admin can access this page.                            | Pass      |
+| Display form  | Check to see if all input fields display with the orginal post details.   | Pass      |
+| Update form  | Update the form and click the Submit button at the bottom of the page and check if the Post has been updated. | Pass      |
+| Submit Button | On click it will update the post, and bring the user back to the posts detail page where the updated post can be seen. | Pass      |
+| Cancel Button | On click it will bring the user back to the post details page.                  | Pass      |
+| Success Message | Success message is displayed at the top right of the screen when a user clicks Submit . | Pass      |
+
+
+#### Delete A Post Modal
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Yes Button | When the user clicks the yes button the Post will be deleted.                 | Pass      |
+| Cancel Button | When th user clicks the cancel button, the delete modal will disappear and the user will be back on the post details page.     | Pass      |
+| Clicking Outside The Modal | When the user clicks anywhere ouside the modal will disappear.    | Pass      |
+| X  | When the user clicks on the X button at the top of the modal, the modal disappears.   | Pass      |
+| Success Message | Success message is displayed at the top right of the screen when a user clicks yes on the delete modal.  | Pass      |
+
+
+#### Reviews
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Reviews  | Check to make sure each review is diplayed correctly with newest at the top.    | Pass      |
+| Add a Review button  | Is only visible when a user is signed in and when clicked brings the user to the Add review page.    | Pass      |
+| Edit button  | This is only visible to the user who posted the review and is at the bottom right of the review, when clicked will bring a user to the edit review page.  | Pass      |
+| Delete button  | This is only visible to the user who posted the review and is at the bottom right of the review, when clicked will bring up the bootstrap delete modal where it will ask the user to confirm the deletion.  | Pass      |
+
+
+#### Edit Review Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Display form  | Check to see if all input fields display with the orginal review details.   | Pass      |
+| Update form  | Update the form and click the Submit button at the bottom and check if the Review has been updated. | Pass      |
+| Submit Button | On click it will update the review, and bring the user back to the Reviews page where the updated Review can be seen. | Pass      |
+| Cancel Button | On click it will bring the user back to the Reviews page.                  | Pass      |
+| Success Message | Success message is displayed at the top right of the screen when a user clicks Submit . | Pass      |
+
+
+#### Delete A Review Modal
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Yes Button | When the user clicks the yes button the Review will be deleted.                 | Pass      |
+| Cancel Button | When th user clicks the cancel button, the delete modal will disappear and the user will be back on the Reviews page.     | Pass      |
+| Clicking Outside The Modal | When the user clicks anywhere ouside the modal will disappear.    | Pass      |
+| X  | When the user clicks on the X button at the top of the modal, the modal disappears.   | Pass      |
+| Success Message | Success message is displayed at the top right of the screen when a user clicks yes on the delete modal.  | Pass      |
+
+
+#### Register Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Sign In link | Below the Signup heading, click Sign in link to see if it brings you to the login page        | Pass      |
+| Submit Filled Out Form  | Fill out the form and click the Signup button to see if new account is created and user is sent a confirmation email. | Pass      |
+| Leave Email Field Blank  | Fill out all the form except email field and hit the Sign Up button to see if warnings appear and does not Sign Up.| Pass      |
+| Leave Email(again) Field Blank  | Fill out all the form except email again field and hit the Sign Up button to see if warnings appear and does not Sign Up.| Pass      |
+| Leave Username Field Blank| Fill out the form and leave Username field blank, to see if it give a warning and does not Sign Up.| Pass      |
+| Leave Password Field Blank| Fill out the form and leave Password field blank, to see if it give a warning and does not Sign Up.| Pass      |
+| Leave Password (again) Field Blank| Fill out the form and leave Password (again) field blank, to see if it give a warning and does not submit.| Pass      |
+| Signup with an taken username| Try to register an account that already has the taken username, and see if it fails and warns you that there is an account with that username. | Pass      |
+| Signup Button | On click check will it submit the user details and and sent them a confirmation email. | Pass      |
+| Verify your email address | When the user enters the correct details they will then see a page that tells them we have sent a verifcation email and to follow the steps in the email. | Pass      |
+
+
+#### Login Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Sign Up link | Unser the Sign In heading , clicking Sign up to see if it brings you to the Register page     | Pass      |
+| Leave Username Field Blank| Fill out Password Field and leave Username field blank, to see if it give a warning and does not Sign in.| Pass      |
+| Leave Password Field Blank| Fill out the Username field and leave Password field blank, to see if it give a warning and does not submit.| Pass      |
+| Sign In with unregistered account | Try to sign in with an account that is not registered, to see if it will fail. | Pass      |
+| Change on letter in username or password | On click check will tell the user that the username or password is incorrect | Pass      |
+| Sign In Button | On click check will it log the user in if they have entered the right credentials and redirect them to the home page. | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user enters the correct details and clicks Sign in. | Pass      |
+
+
+#### Shopping Cart Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| shows products in cart | Check to see if displays your cart contents correctly   | Pass      |
+| Update Button| Under each product there is an update button, when the user changes the quantity witht eh quantity select and clicks update it changes the subtotal for that product. | Pass      |
+| Remove Button | Under each product there is an Remove button, that when clicked will remove the product from the cart.   | Pass      |
+| Grand Total | Make sure the grand total updates the to the total price  | Pass      |

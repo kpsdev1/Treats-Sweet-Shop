@@ -363,3 +363,87 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 #### Delete a Review
 *As a User I can Delete my review so that I can remove it.*
 - In the top right of a review that the user has left there is an **Delete** button that when clicked it will bring up a bootstrap modal asking thuser to confim their deletion, oce comfirmed then the review will be removed . A user can only delete a review they have posted.
+- - -
+
+## Manual Testing
+
+#### Navigation
+| Feature               | Test Performed                                                     | Result  |
+|-----------------------|--------------------------------------------------------------------|---------|
+| Logo | Clicking on logo to see if it redirects to home page.                               | Pass    |
+| Home | Clicking on Home link brings user to the home page.                                 | Pass    |
+| Products | Clicking on the Products link, brings user to the product page.                      | Pass    |
+| blog | When signed in clicking on the blog link, brings user to the blog page.           | Pass    |
+| Reviews | Clicking on the Reviews link, brings user to the reviews page.                      | Pass    |
+| search| Entering a product into the search box and clicking the icon displays a result for the search term.     | Pass    |
+| Register | When signed out clicking on the Register link, brings the user to the Registeration page.   | Pass    |
+| Login | When signed out, clicking on the Login link, brings the user to the login page.    | Pass    |
+| Logout | When signed in, clicking on the logout link, brings the user to the logout page.  | Pass    |
+| Correct links display | When a user is signed in or out the correct links display for both.   | Pass    |
+| Displays correctly on all pages | Made sure it displays correctly on all pages.               | Pass    |
+| Current Page | Nav Link is bold for current page that a user is on.                        | Pass    |
+| Responsiveness | Checked to make sure it changes to burger menu on smaller devices.         | Pass      |
+
+
+#### Footer
+| Feature               | Test Performed                                                     | Result  |
+|-----------------------|--------------------------------------------------------------------|---------|
+| External links | Clicking on social media links opens on a new page.                       | Pass    |
+| Private Policy | Clicking on Private policy link opens on a new page with the private policy on it.   | Pass    |
+| Subscribing | Entering an email into the Sucribe input box and clicking suscribe, signs the user up to the mailing list   | Pass    |
+| Displays correctly on all pages | Made sure it displays correctly on all pages.            | Pass    |
+| Responsiveness | Checked to make sure link icons display correctly on smaller devices.     | Pass    |
+
+
+#### Home
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Images | Checked to make sure Images load correctly on large and small devices.            | Pass      |
+| Shop Now Button | When clicked bruing the user to the products page                        | Pass      |
+| About Us Section | Make sure section displays correctly on all device widths               | Pass      |
+
+
+#### Products
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Product cards   | Check to make sure product cards display correctly.                        | Pass      |
+| Click on image| Allow user to click the image part of the card which will then bring them to the product detaisl page.    | Pass      |
+| Sort Button | Sorts the Products to the selected choice in the drop down.         | Pass      |
+
+
+#### Product Details Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Product Content   | Make sure the product content displays correctly.                         | Pass      |
+| Edit Product   | When clicked brings the admin to the edit form, this is only visible to a superuser.            | Pass      |
+| Delete Product   | When clicked this will delete the product from the site and database, this is only visible to a superuser.        | Pass      |
+| Quantity Button  | Aloows user to select how mcuh of a bporduct he wants before adding to the cart. Also checked that 1 is the minimum.    | Pass      |
+| Back button   | When clicked brings the user back to the products page.         | Pass      |
+| Add to Cart Button   | When clicked adds the product to cart and also the quantity of that product    | Pass      |
+
+
+#### Add Product Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Display form  | Check to see if all input fields display correctly.                                  | Pass      |
+| Submit filled out form  | Fill out all the form and click the Add Product button at the bottom of the page. | Pass      |
+| Leave Image field blank on submission  | Check to make sure image place holder displays after submititng. | Pass      |
+| Leave Input fields blank | Check to make sure form wont submit, and will display warnings. | Pass      |
+| Add Product Button | On click it will submit the Product. | Pass      |
+| Cancel Button | On click it will bring the user back to the Products list.                  | Pass      |
+| Success Message | Success message is displayed at the top right of the screen when a user clicks Add Product.  | Pass      |
+
+
+#### Edit Product Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Display form  | Check to see if all input fields display with the orginal product details.   | Pass      |
+| Update form  | Update the form and click the Update product button at the bottom of the page and check if the product has been updated. | Pass      |
+| Update Product Button | On click it will Update the product, and bring the user to the products page where the updated product can be seen. | Pass      |
+| Cancel Button | On click it will bring the user back to the Products list.                  | Pass      |
+| Success Message | Success message is displayed at the top right of the screen when a user clicks Update Product. | Pass      |

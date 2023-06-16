@@ -579,3 +579,5 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Update Button| Under each product there is an update button, when the user changes the quantity witht eh quantity select and clicks update it changes the subtotal for that product. | Pass      |
 | Remove Button | Under each product there is an Remove button, that when clicked will remove the product from the cart.   | Pass      |
 | Grand Total | Make sure the grand total updates the to the total price  | Pass      |
+| Secure Checkout button | Clicking on the secure checkout button will bring the user to the checkout page  | Pass      |
+| Back button | Clicking on the Back button will bring the user back to the products page. | Pass      |

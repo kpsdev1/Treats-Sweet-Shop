@@ -466,7 +466,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
 | Admin only  | Make sure only a site admin can access this page.                            | Pass      |
-| Display form  | Check to see if all input fields display correctly.                                  | Pass      |
+| Display form  | Check to see if all input fields display correctly.                        | Pass      |
 | Submit filled out form  | Fill out all the form and click the Submit button at the bottom of the page. | Pass      |
 | Leave an Input field blank | Check to make sure form wont submit, and will display warnings. | Pass      |
 | Submit Button | On click it will submit the Post and bring the admin back to the blog page where they will see the post. | Pass      |
@@ -581,3 +581,19 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Grand Total | Make sure the grand total updates the to the total price  | Pass      |
 | Secure Checkout button | Clicking on the secure checkout button will bring the user to the checkout page  | Pass      |
 | Back button | Clicking on the Back button will bring the user back to the products page. | Pass      |
+
+
+#### Checkout Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| shows order summary | Above the form display a list of cart contents.  | Pass      |
+| Display form  | Check to see if all input fields display correctly.                        | Pass      |
+| Submit filled out form  | Fill out all the form and click the Complete order button at the bottom of the page. | Pass      |
+| Leave an Input field blank | Check to make sure form wont submit, and will display warnings. | Pass      |
+| Allow checkout as guest | Check to make sure a user does not have to register to purchase items. | Pass      |
+| Login / Create an account | If user is checking out as a guest make sure there is a create anmd and login option at the bottom to save the information | Pass      |
+| Save information to profile | When a registered user is checking out they will have a checkbox at the bootm of the form that they can click to save the information to their profile. | Pass      |
+| Prepoulate delivery information | If the user has delivery information filled out on thir profile it will prepopulate the delivery information on the checkout page | Pass      |
+| Complete Order Button  | When the form is fillout correctly, the order is place and it is able be seen in stripe and confimation email is also sent to user     | Pass      |
+| Back Button  | When clciked brings the suer back to their shopping cart   | Pass      |

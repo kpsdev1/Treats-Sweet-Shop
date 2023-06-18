@@ -8,21 +8,21 @@
     
 
     <div class="row g-0">
-        <div class="col-10 offset-1">
-            <a href="{% url 'account_login' %}" class="text-center mb-3 text-dark {% if user.is_authenticated %} d-none {% endif %}">
+        <div class="col-12 col-md-10 offset-md-1">
+            <a href="{% url 'account_login' %}" class="text-center ms-2 mb-3 text-dark {% if user.is_authenticated %} d-none {% endif %}">
                 Please log in to read the blogs
             </a>
-                <div class="row mt-1 mb-2">
+                <div class="row mt-1 mb-2 g-0">
                     {% if request.user.is_superuser %}
                         <div>
-                            <a href="{% url 'add_post' %}" class="btn btn-primary btn-sm mb-2">Add Post</a>
+                            <a href="{% url 'add_post' %}" class="btn btn-primary btn-sm mb-2 ms-2">Add Post</a>
                         </div>
                     {% endif %}
 
                     {% for post in post_list %}
                     <div class="col-12 col-md-6 col-lg-4 mb-2">
                         
-                        <div class="card h-100">
+                        <div class="card h-100 mx-2">
                             
                             <img src="{{ post.image.url }}" class="card-img-top" alt="blog image">
                             <div class="card-body text-center">

@@ -9,7 +9,7 @@
 <div class="row g-0">
     <div class="col-12 col-md-6 offset-md-3">
         {% if user.is_authenticated %}
-        <a href="{% url 'add_review' %}" class="btn btn-success btn-sm">Add A Review</a>
+        <a href="{% url 'add_review' %}" class="btn btn-success btn-sm add-review">Add A Review</a>
     {% endif %}
     </div>
 </div>
@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 border border-light bg-light position-relative">
                     <p class="fs-5 fw-bolder col-md-10 title-text"> {{ review.title }}</p>
-                    <p class="pt-2 text-info"><i class="fa-solid fa-user"></i> {{ review.posted_by }}</p>
+                    <p class="pt-2 text-info review-posted-by"><i class="fa-solid fa-user"></i> {{ review.posted_by }}</p>
                     <div class="star pt-1">
                       <!-- shows review stars out of 5 -->
                       {% if review.rating == '1' %}
@@ -48,7 +48,7 @@
                         <span class="float-right"><i class="text-warning fa fa-star"></i></span>
                       {% endif %}
                     </div>
-                    <p class="mb-4 pt-2">{{ review.body }}</p>
+                    <p class="mb-4 pt-2 review-body">{{ review.body }}</p>
                     <p class="text-muted m-0 pb-2 text-small">Posted on {{ review.date_added }}</p>
                     <!-- edit/delete review -->
                     {% if user.is_authenticated and user == review.posted_by %}  

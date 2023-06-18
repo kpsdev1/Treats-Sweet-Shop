@@ -20,7 +20,7 @@ footer {
 
 /* for the logout page */
 .push-down {
-    margin-bottom: 25vh;
+    margin-bottom: 30vh;
 }
 
 
@@ -248,15 +248,48 @@ footer i {
 /* extra small screens */
 @media screen and (max-width: 420px) {
 
+    /* post details page */
+    .post-title {
+        font-size: 1.1rem !important;
+    }
+
+    .comment-heading {
+        font-size: 1.3rem !important;
+        font-weight: bold;
+    }
+
+    .comment-small-text {
+        font-size: small !important;
+    }
+
+    
+
+
     /* reviews */
     .heading-small {
         font-size: 1.5em !important;
 
     }
 
+    .add-review {
+        margin-left: .25rem;
+    }
+
+    .fa-star {
+        font-size: small !important;
+    }
+
     .title-text {
-        font-size: medium !important;
+        font-size: small !important;
         margin-top: 8%;
+    }
+
+    .review-posted-by {
+        font-size: small;
+    }
+
+    .review-body {
+        font-size: small;
     }
 
     .text-small {
@@ -272,6 +305,13 @@ footer i {
         height: 22px !important;
         width: 22px !important;
     }
+
+    .btn-xs {
+        padding: .30rem .3rem;
+        font-size: .785rem;
+        line-height: .5;
+        border-radius: 0;
+    }
     
 
 }
@@ -282,6 +322,10 @@ footer i {
         right: 10px;
         width: 300px;
         
+    }
+
+    .order-confirmation-wrapper {
+        font-size: .9rem;
     }
 
 }

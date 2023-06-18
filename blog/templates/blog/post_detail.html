@@ -6,7 +6,7 @@
 <div class="contianer-fluid mx-2">
 <div class="row g-0">
     <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4" >
-        <h2 class="text-center mb-4"> {{ post.title }}</h2> 
+        <h2 class="text-center mb-4 post-title"> {{ post.title }}</h2> 
         <p class="text-muted"> {{post.posted.on}} </p>
         <img src="{{ post.image.url }}" class="card-img-top" alt="image from blog post">
 
@@ -46,16 +46,16 @@
         </div>
         
         <hr class="mt-4">
-        <h2 class="text-center">Comments</h2>
+        <h2 class="text-center comment-heading">Comments</h2>
         
         {% for comment in comments %}
         <div class="card mt-2 position-relative bg-light">
             <div class="card-body p-2">
-              <h6 class="fw-bold text-icon"><i class="fa-solid fa-circle-user pe-1"></i>{{ comment.name}}</h6>
-              <p class="mt-3 mb-4 pb-2">{{ comment.comment }}</p>
+              <h6 class="fw-bold text-icon comment-small-text"><i class="fa-solid fa-circle-user pe-1"></i>{{ comment.name}}</h6>
+              <p class="mt-3 mb-4 pb-2 comment-small-text">{{ comment.comment }}</p>
               <a href="{% url 'edit_comment' comment.id %}" class="btn btn-xs me-1 btn-info edit-comment" >Edit</a>
               <button type="button" class="btn btn-xs btn-danger text-light delete-comment" data-bs-toggle="modal" data-bs-target="#deleteCommentModal">X</button> 
-              <p class="text-muted small mb-0">Posted {{ comment.posted_on }} </p>
+              <p class="text-muted small mb-0 text-small">Posted {{ comment.posted_on }} </p>
            </div>
         </div>
         
@@ -95,12 +95,12 @@
                 <div class="card">
                     <div class="card-body">
                         <h5>Post a Comment:</h5>
-                        <p>By: {{ user.username }}</p>
+                        <p class="comment-small-text">By: {{ user.username }}</p>
                         <form method="post">
                             {{ comment_form | crispy }}
                             {% csrf_token %}
                             <div class="d-flex justify-content-end mb-4">
-                                <button type="submit" aria-label="Post Comment" class="btn btn-primary mt-2">Post</button>
+                                <button type="submit" aria-label="Post Comment" class="btn-sm btn-primary mt-2">Post</button>
                             </div>
                         </form>
         {% endif %}

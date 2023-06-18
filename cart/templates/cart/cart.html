@@ -48,7 +48,7 @@
                                             {% csrf_token %}
                             
                                             <div class="col-md-4 col-6 mb-3">
-                                                <div class="input-group mb-3" style="width: 140px;">
+                                                <div class="input-group mb-3 input-group-{{ item.item_id }}" style="width: 150px;">
                                                   <button class="btn btn-white btn-sm border border-secondary px-3 decrement" type="button" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}" data-mdb-ripple-color="dark">
                                                     <i class="fas fa-minus"></i>
                                                   </button>
@@ -59,7 +59,7 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <a class="update-link text-info ms-2"><small>Update</small></a>
+                                        <a class="update-link text-info ms-3"><small>Update</small></a>
                                         <a class="remove-item text-danger ms-2" id="remove_{{ item.item_id }}"><small>Remove</small></a> 
                                     </td>
                                     <td class="py-3">
@@ -95,7 +95,7 @@
             </div>
         </div>
     </div>
-    
+
 
 {% endblock %}
 

@@ -9,15 +9,15 @@
 <h2 class="logo-font mb-4 text-success">{% trans "Sign Out" %}</h2>
 <hr class="mb-5">
 <p>{% trans 'Are you sure you want to sign out?' %}</p>
-
-<form method="post" class="mb-5" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <a class="btn btn-warning rounded-0" href="{% url 'home' %}">Cancel</a>
-  <button class="btn btn-success rounded-0" type="submit">{% trans 'Sign Out' %}</button>
-</form>
-
+<div class="push-down">
+  <form method="post" class="mb-5" action="{% url 'account_logout' %}">
+    {% csrf_token %}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+    {% endif %}
+    <a class="btn btn-warning rounded-0" href="{% url 'home' %}">Cancel</a>
+    <button class="btn btn-success rounded-0" type="submit">{% trans 'Sign Out' %}</button>
+  </form>
+</div>
 
 {% endblock %}

@@ -1,31 +1,35 @@
 <script type="text/javascript">
 
-    let plus = document.querySelector('.increment');
-    let minus = document.querySelector('.decrement');
-    let quantity = document.querySelector('.quantity_num');
+    let plus = document.querySelectorAll('.increment');    
+    let minus = document.querySelectorAll('.decrement');
+    let quantity = document.querySelectorAll('.quantity_num');
 
 
+    for (let i = 0; i < plus.length; i++) {
+        plus[i].addEventListener('click', ()=>{
+            quantity[i].value++;
+            console.log(quantity.value)
+            minus.disabled = false;
+            
+        });
+    }
 
-    plus.addEventListener('click', ()=>{
-        quantity.value++;
-        console.log(quantity.value)
-        minus.disabled = false;
-        
-    });
+    for (let i = 0; i < minus.length; i++) {
+        minus[i].addEventListener('click', ()=>{
+            if(quantity[i].value <= 1){
+                minus.disabled = true;
+            }
+            else{
+
+                quantity[i].value--;
+                
+            }
+        });
+    }
+
+   
 
 
-    minus.addEventListener('click', ()=>{
-        if(quantity.value <= 1){
-            minus.disabled = true;
-        }
-        else{
-
-            quantity.value--;
-        }
-    });
-  
-    
-    
     
     
 </script>

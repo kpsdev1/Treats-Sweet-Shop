@@ -40,6 +40,8 @@
     <title>Treats Sweet Shop{% block extra_title %}{% endblock %}</title>
   </head>
   <body>
+  <div id="page-container">
+  <div id="content-wrap">
     <header class="container-fluid g-0 mb-5">
       <!-- Navigation -->
       {% include 'includes/navigation.html' %}
@@ -48,7 +50,7 @@
       <div class="col bg-warning text-black">
          <h4 class="logo-font my-1 text-center"> This site is for educational purposes, please do not enter real credit or debit card information.</h4>                
       </div>            
-    </div>    
+       
 
     </header>  
     
@@ -79,10 +81,10 @@
     
     
     {% endblock %}
-
+    </div>
     <!-- footer section -->
     {% include 'includes/footer.html' %}
- 
+  </div>
 
     {% block postloadjs %}
     <script type="text/javascript">

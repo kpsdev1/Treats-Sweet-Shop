@@ -7,15 +7,23 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'montserrat', sans-serif;
-   
-    
-    
+
 }
 
 footer {
     margin-top: auto;
-  }
+
+}
+
+
 /* ---------------------------------------------------------------- */
+
+/* for the logout page */
+.push-down {
+    margin-bottom: 25vh;
+}
+
+
 
 /* active class to show the user what page they are on */
 .active {

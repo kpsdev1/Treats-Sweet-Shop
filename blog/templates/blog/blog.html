@@ -4,13 +4,14 @@
 
 {% block content %}
 
-    <a href="{% url 'account_login' %}" class="text-center mb-3 text-dark {% if user.is_authenticated %} d-none {% endif %}">
-        Please log in to read the blogs
-    </a>
+    
     
 
     <div class="row g-0">
         <div class="col-10 offset-1">
+            <a href="{% url 'account_login' %}" class="text-center mb-3 text-dark {% if user.is_authenticated %} d-none {% endif %}">
+                Please log in to read the blogs
+            </a>
                 <div class="row mt-1 mb-2">
                     {% if request.user.is_superuser %}
                         <div>

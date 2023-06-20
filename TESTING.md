@@ -78,6 +78,13 @@ The **Add Post** and **Edit Post** pages threw errors in the Validator that were
 ![summernote errors](readme-docs/images/summernote-errors.jpg)
 - - -
 
+### CSS
+The CSS stylesheet was put through the W3C Jiqsaw validator to see if there was any errors. The W3C Jiqsaw validator can be found [here](https://jigsaw.w3.org/css-validator/).
+As you can see from the below screenshot of the result there were no errors.
+
+![Css Validation](readme-docs/images/css-validator.jpg)
+- - -
+
 ### Python
 - I tested the project using the PEP8 validator in gitpod, this I had installed from my previous project, but it can be installed by running **pip3 install pycodestyle** then searching for **Python**, Select **Linter** and then select **pycodestyle**. The PEP8 errors would then be underlined in red and also listed in the **Problems tab**. This returned no errors.
 - I also tested the site on **Code Institutes pep8 online** website. Which can be found [here](https://pep8ci.herokuapp.com/). As you can see from the below screenshots, no errors were found.

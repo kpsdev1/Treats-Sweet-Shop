@@ -18,15 +18,15 @@
         {% endif %}
 
             
-        <p> {{ post.body|safe }}</p>
+       <div> {{ post.body|safe }} </div>
         
       
         <!-- This Modal is from bootstrapmodals page | this is for deleting the blog post-->
-        <div class="modal fade" id="deletePostModal" tabindex="-1" role="dialog" aria-labelledby="postDeleteModalLabel" aria-hidden="true">
+        <div class="modal fade" id="deletePostModal" tabindex="-1" role="dialog" aria-labelledby="deletePostModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="deleteModalLabel">Delete Post</h5>
+                      <h5 class="modal-title" id="deletePostModalLabel">Delete Post</h5>
                       <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
@@ -61,11 +61,11 @@
         
 
         <!-- This Modal is from bootstrapmodals page | this is for deleting the comment-->
-        <div class="modal fade" id="deleteCommentModal" tabindex="-1" role="dialog" aria-labelledby="commentDeleteModalLabel" aria-hidden="true">
+        <div class="modal fade" id="deleteCommentModal" tabindex="-1" role="dialog" aria-labelledby="deleteCommentModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="deleteModalLabel">Delete Comment</h5>
+                      <h5 class="modal-title" id="deleteCommentModalLabel">Delete Comment</h5>
                       <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>

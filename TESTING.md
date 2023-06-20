@@ -16,6 +16,55 @@
 
 ## Validator Testing
 
+### HTML
+All the site pages were run through the W3C validator to check for any issues and HTML syntax errors. The W3C validator can be found [here](https://validator.w3.org/). As you can see from the below screenshots there are no errors.
+
+<details>
+    <summary>Home Page</summary>  
+    
+![home validation ](readme-docs/images/validator-home.jpg)  
+</details>
+  
+<details>
+    <summary>Products Page</summary>  
+    
+![products validation](readme-docs/images/validator-products.jpg)  
+</details>  
+
+<details>
+    <summary>Blog Page</summary>  
+    
+![blog validation](readme-docs/images/validator-blog.jpg)  
+</details> 
+
+<details>
+    <summary>Blog Detail Page</summary>  
+    
+![blog detail validation](readme-docs/images/validator-blog-details.jpg)  
+</details>
+
+<details>
+    <summary>Reviews Page</summary>  
+    
+![reviews validation](readme-docs/images/validator-reviews.jpg)  
+</details> 
+
+<details>
+    <summary>Register Page</summary>  
+    
+![Register validation](readme-docs/images/validator-register.jpg)  
+</details> 
+
+<details>
+    <summary>Login Page</summary>  
+    
+![Login validation](readme-docs/images/validator-login.jpg)  
+</details> 
+
+The **Add Product** and **Edit Product** pages threw errors in the Validator that were related to the Django **Summernote** widget that I used. From searching on slack, speaking to tutor support and also talking to my mentor I was told that this is common with summernote and as I had not written the summernote code, I could ignore these errors as long as my code validated and make a note of it in the readme. These errors do not affect the site functionality in any way. Below you can see a screenshot of the errors.
+
+![summernote errors](readme-docs/images/summernote-errors.jpg)
+- - -
 
 ### Python
 - I tested the project using the PEP8 validator in gitpod, this I had installed from my previous project, but it can be installed by running **pip3 install pycodestyle** then searching for **Python**, Select **Linter** and then select **pycodestyle**. The PEP8 errors would then be underlined in red and also listed in the **Problems tab**. This returned no errors.

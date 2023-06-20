@@ -54,16 +54,16 @@
                     {% if user.is_authenticated and user == review.posted_by %}  
                       <div class="review-update">
                         <a href="{% url 'edit_review' review.pk %}" class="btn btn-xs btn-info" >Edit</a>
-                        <button type="button" class="btn btn-xs btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button> 
+                        <button type="button" class="btn btn-xs btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#deleteReviewModal">Delete</button> 
                       </div>
                     {% endif %}
 
                     <!-- This Modal is from bootstrapmodals page-->
-                    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="reviewDeleteModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="deleteReviewModal" tabindex="-1" role="dialog" aria-labelledby="deleteReviewModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="deleteModalLabel">Delete Review</h5>
+                                  <h5 class="modal-title" id="deleteReviewModalLabel">Delete Review</h5>
                                   <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>

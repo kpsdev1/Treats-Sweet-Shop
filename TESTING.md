@@ -32,6 +32,18 @@ All the site pages were run through the W3C validator to check for any issues an
 </details>  
 
 <details>
+    <summary>Products Details Page</summary>  
+    
+![products details validation](readme-docs/images/validator-products-details.jpg)  
+</details>  
+
+<details>
+    <summary>Add Products Page</summary>  
+    
+![add product validation](readme-docs/images/validator-add-product.jpg)  
+</details>  
+
+<details>
     <summary>Blog Page</summary>  
     
 ![blog validation](readme-docs/images/validator-blog.jpg)  
@@ -61,7 +73,7 @@ All the site pages were run through the W3C validator to check for any issues an
 ![Login validation](readme-docs/images/validator-login.jpg)  
 </details> 
 
-The **Add Product** and **Edit Product** pages threw errors in the Validator that were related to the Django **Summernote** widget that I used. From searching on slack, speaking to tutor support and also talking to my mentor I was told that this is common with summernote and as I had not written the summernote code, I could ignore these errors as long as my code validated and make a note of it in the readme. These errors do not affect the site functionality in any way. Below you can see a screenshot of the errors.
+The **Add Post** and **Edit Post** pages threw errors in the Validator that were related to the Django **Summernote** widget that I used. From searching on slack, speaking to tutor support and also talking to my mentor I was told that this is common with summernote and as I had not written the summernote code, I could ignore these errors as long as my code validated and make a note of it in the readme. These errors do not affect the site functionality in any way. Below you can see a screenshot of the errors.
 
 ![summernote errors](readme-docs/images/summernote-errors.jpg)
 - - -

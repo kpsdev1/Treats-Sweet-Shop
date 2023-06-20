@@ -34,7 +34,7 @@ All the site pages were run through the W3C validator to check for any issues an
 <details>
     <summary>Products Details Page</summary>  
     
-![products details validation](readme-docs/images/validator-products-details.jpg)  
+![products details validation](readme-docs/images/validator-product-details.jpg)  
 </details>  
 
 <details>

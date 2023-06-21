@@ -15,9 +15,9 @@ Treats Sweet shop is a online sweet store where users can purchase sweets from a
     * [Colour Scheme](#colour-scheme)
     * [Database Diagram](#database-diagram)
 
-3. [Marketing](#marketing)
+2. [Marketing](#marketing)
 
-2. [Features](#features)
+3. [Features](#features)
     * [Navigation](#Navigation-bar)
     * [footer](#footer)
     * [Home Page](#home-page)
@@ -32,12 +32,12 @@ Treats Sweet shop is a online sweet store where users can purchase sweets from a
     * [Edit Review Page](#Edit-review-page)
     * [Add Product Page](#add-product-page)
 
-3. [Future Features](#future-features)
-4. [Technologies Used](#technologies-used)
-5. [Testing](#testing)
-6. [Deployment](#deployment)
-7. [Credits](#credits)
-8. [Acknowledgements](#acknowledgements)
+4. [Future Features](#future-features)
+5. [Technologies Used](#technologies-used)
+6. [Testing](#testing)
+7. [Deployment](#deployment)
+8. [Credits](#credits)
+9. [Acknowledgements](#acknowledgements)
 
 
 ### User Stories

@@ -88,7 +88,7 @@ As you can see from the below screenshot of the result there were no errors.
 ### JavaScript
 The Javascript file was put through Jshint code validator to see if there were any errors. Jshint can be found [here](https://jshint.com/).
 - The first image is from the JavaScript file i wrote for the Quantity buttons, it throws no errors but 2 warnings, i showed this to my mentor and he said that they are just warnings and can bve ignored, from looking online it is because the event lister is inside the for loop, when putting the event listener outside the forloop the warnings do not show but the quantity buttons do not work correctly.
-- The second JavaScript file is from strip and is the same one that is used in boutique ado, it gives one undefined variable, from searching on slack and speaking to tutor support, this is normal behaviour as it is comming form another script.
+- The second JavaScript file is from Stripe and is the same one that is used in boutique ado, it gives one undefined variable, from searching on slack and speaking to tutor support, this is normal behaviour as it is comming form another script.
 
 ![JS Validation](readme-docs/images/js.jpg)
 

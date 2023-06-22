@@ -133,6 +133,22 @@ Below is the database diagram that I created using LucidCharts.
 - - -
 
 
+## Marketing
+Treats Sweet Shop is a e-commerce website that sells directly to consumers all over the world.
+
+#### Social Media Marketing
+As the budget is limited with this business we decided to use cheap cheap organic marketing to start with and maybe in the future when business takes off we will look into some paid advertising. With all this in mind we decided to start with creating a Facebook Business page as Facebook is one of the biggest social media sites and one of the best for promoting a business. By creating a Facebook business page we then could post regular content of what we offer to keep the audience engaged. We have also decided on our Facebook page to do monthly Sweet hamper giveaways where the users just need to follow our page and share the post, this in turn is also cheap way that we can advertise our business.
+
+
+#### Email Marketing
+We also plan to send out a monthly news letter that details what products we have to offer adn any new products that we may have on the site, as the site is still growing we will be constantly adding more and more products. In order to collect emails for our monthly mailing list we have added a suscribe inbupt field at the bottom of page in the footer where the user can enter there email address and then click suscribe, which will then sign them up to our monthly news letter. We used mailchimp to collect our mailing list.
+
+#### Sitemap.xml
+To help search engines crawl through our website a sitemap was created with alist of all the important Urls and Data on the site. We used XML sitemaps.com to create our sitemap.The website can be found [here](https://www.xml-sitemaps.com/)
+
+#### Robots.txt
+A robots.txt file was created to tell search engines where not to crawl on the site.
+
 ## Features
 
 ### Navigation Bar

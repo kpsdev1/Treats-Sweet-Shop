@@ -466,6 +466,40 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 
 
 
+#### Real Device Screenshots
+
+<details>
+    <summary>Samsung a53</summary>  
+
+![Samsung a53 image](readme-docs/images/a53.jpg)
+</details>  
+
+<details>
+    <summary> iPhone 11</summary>  
+
+![Iphone 11 image](readme-docs/images/iphone11.jpg)
+</details>  
+
+<details>
+    <summary> iPad 7</summary>  
+
+![Ipad 7 image](readme-docs/images/ipad7.png)
+</details>  
+
+<details>
+    <summary> Samsung S8</summary>  
+
+![Samsung S8 image](readme-docs/images/s8.jpg)
+</details>  
+
+<details>
+    <summary> iPhone 7</summary>  
+
+![iphone 7 image](readme-docs/images/iphone7.jpg)
+</details>  
+
+- - - 
+
 ## User Story Testing
 
 

@@ -384,6 +384,88 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 </details>
 
 
+## Browser and Device Testing
+- In order to make sure the site was fully responsive and compatible with different browsers and devices, I tested the site on multiple browsers and devices. 
+- The browsers I tested the site on **Chrome**, **Edge** and **Firefox**, when using **Chrome** I was able to use the dev tools and test the site on many different device sizes  like **iPhones 5, 6, 7, 8, X, SE and 12 pro**, **iPad mini and air** , and **Samsung s9+ and s20 ultra**, the site worked as expected on all.
+- I also tested the site on a number of real mobile and tables, the devices I tested on were **Samsung S8 and a53**, **iPad 7** and **iPhone 7 and 11**.
+- From testing the site on multiple browsers and devices, along with different screen widths, I can confirm that the site is fully responsive and compatible with multiple browsers and devices as you will see from the screenshots below.
+
+#### Browser Screenshots
+
+<details>
+    <summary>Chrome</summary>  
+
+![chrome browser test](readme-docs/images/chrome.jpg)
+</details>  
+
+<details>
+    <summary>Edge</summary>  
+
+![edge browser test](readme-docs/images/edge.jpg)
+</details>  
+
+<details>
+    <summary>Firefox</summary>  
+
+![firefox browser test](readme-docs/images/firefox.jpg)
+</details>
+
+<details>
+    <summary>Chrome Dev tools iPhone 5</summary>  
+
+![Iphone 5 image](readme-docs/images/iphone5.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools iPhone 6, 7, 8</summary>  
+
+![Iphone 6,7,8 image](readme-docs/images/iphone678.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools iPhone SE</summary>  
+
+![Iphone SE image](readme-docs/images/iphonese.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools iPhone X</summary>  
+
+![Iphone X image](readme-docs/images/iphonex.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools iPhone 12 Pro</summary>  
+
+![Iphone 12 image](readme-docs/images/iphone12.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools iPad Mini</summary>  
+
+![Ipad mini image](readme-docs/images/ipadmini.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools iPad air</summary>  
+
+![Ipad Air image](readme-docs/images/ipadair.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools Samsung S9 </summary>  
+
+![Samsung S9 image](readme-docs/images/samsungs9.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools Samsung S20 Ultra</summary>  
+
+![Samsung S20 image](readme-docs/images/samsungs20.jpg)
+</details>  
+
+
+
 ## User Story Testing
 
 

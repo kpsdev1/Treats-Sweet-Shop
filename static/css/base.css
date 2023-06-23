@@ -247,6 +247,18 @@ footer i {
 }
 
 
+@media screen and (max-width: 767px) {
+    .shop-now-button{
+        bottom: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: medium;
+    }
+
+}
+
 
 /* extra small screens */
 @media screen and (max-width: 420px) {
@@ -329,6 +341,12 @@ footer i {
 
     .order-confirmation-wrapper {
         font-size: .870rem;
+    }
+
+    .shop-now-button{
+        bottom: 18%;
+        
+        
     }
 
 }

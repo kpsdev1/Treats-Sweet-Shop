@@ -327,6 +327,12 @@ footer i {
         line-height: .5;
         border-radius: 0;
     }
+
+    .shop-now-button{
+        bottom: 20%;
+        
+        
+    }
     
 
 }
@@ -344,7 +350,7 @@ footer i {
     }
 
     .shop-now-button{
-        bottom: 15%;
+        bottom: 18%;
         
         
     }

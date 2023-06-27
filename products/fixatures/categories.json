@@ -27,14 +27,6 @@
         "pk": 4,
         "model": "products.category",
         "fields": {
-            "name": "liquorice",
-            "friendly_name": "Liquorice"
-        }
-    },
-    {
-        "pk": 4,
-        "model": "products.category",
-        "fields": {
             "name": "others",
             "friendly_name": "Others"
         }

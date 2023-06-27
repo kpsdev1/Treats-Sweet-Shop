@@ -134,16 +134,20 @@ Below is the database diagram that I created using LucidCharts.
 
 
 ## Marketing
-Treats Sweet Shop is a e-commerce website that sells directly to consumers all over the world.
+Treats Sweet Shop is a e-commerce website that sells directly to consumers all over the world. It is a B2C focused webite, and the idea of the site is to be able to bring affordable sweets to people all over the world. We have tried to create an easy shopping expierence for the users so that they are able to navigate and purchase products quickly and with ease.
+
 
 #### Social Media Marketing
-As the budget is limited with this business we decided to use cheap cheap organic marketing to start with and maybe in the future when business takes off we will look into some paid advertising. With all this in mind we decided to start with creating a Facebook Business page as Facebook is one of the biggest social media sites and one of the best for promoting a business. By creating a Facebook business page we then could post regular content of what we offer to keep the audience engaged. We have also decided on our Facebook page to do monthly Sweet hamper giveaways where the users just need to follow our page and share the post, this in turn is also cheap way that we can advertise our business. The Facebook page can be found [here](https://www.facebook.com/profile.php?id=100094215246991). (please note Facbook may have removed this page as they tend to rmeove inactive pages so i have included a screenshot below)
+As the budget is limited with this business we decided to use cheap cheap organic marketing to start with and maybe in the future when business takes off we will look into some paid advertising. With all this in mind we decided to start with creating a Facebook Business page as Facebook is one of the biggest social media sites and one of the best for promoting a business. By creating a Facebook business page we then could post regular content of what we offer to keep the audience engaged. We have also decided on our Facebook page to do monthly Sweet hamper giveaways where the users just need to follow our page and share the post, this in turn is also cheap way that we can advertise our business. The Facebook page can be found [here](https://www.facebook.com/profile.php?id=100094215246991). (please note Facebook may have removed this page as they tend to remove inactive pages so i have included a screenshot below)
 
 
 ![Facebook Page](readme-docs/images/facebook.jpg)  
 
 #### Email Marketing
 We also plan to send out a monthly news letter that details what products we have to offer adn any new products that we may have on the site, as the site is still growing we will be constantly adding more and more products. In order to collect emails for our monthly mailing list we have added a suscribe inbupt field at the bottom of page in the footer where the user can enter there email address and then click suscribe, which will then sign them up to our monthly news letter. We used mailchimp to collect our mailing list.
+
+#### Search Engine Optimization
+For the this project I completed research on which SEO keywords to use both short-tail(which are more broad generic and pouular searhch terms ) and long-tail(which are keywords that are more specific, niche, and targeted terms that have a lower search volume and competition) in order to improve the search engine ranking so that our site will be more visible to people online.
 
 #### Sitemap.xml
 To help search engines crawl through our website a sitemap was created with alist of all the important Urls and Data on the site. We used XML sitemaps.com to create our sitemap.The website can be found [here](https://www.xml-sitemaps.com/)

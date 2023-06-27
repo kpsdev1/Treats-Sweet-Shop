@@ -6,22 +6,19 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     font-family: 'montserrat', sans-serif;
+    
 
 }
 
 footer {
     margin-top: auto;
-
+   
 }
 
 
 /* ---------------------------------------------------------------- */
-
-/* for the logout page */
-.push-down {
-    margin-bottom: 30vh;
-}
 
 
 

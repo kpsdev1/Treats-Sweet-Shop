@@ -1,6 +1,6 @@
 # Treats Sweet Shop
-Treat Sweet Shop is a e-Commerce website that I build Using the Django Full Stack Frameworl for my fifth and final project at Code Institute.
-Treats Sweet shop is a online sweet store where users can purchase sweets from a wide variety, there is alos a secion on the website that allows users to leave review of their experience shoppping at Treats. I have also include a blog section where that admin can post blog and then registered users are able to comment underneath said blogs.
+Treat Sweet Shop is a e-Commerce website that I build using the Django Full Stack Framework for my fifth and final project at Code Institute.
+Treats Sweet Shop is a online sweet store where users can purchase sweets from a wide variety of products, there is also a section on the website that allows users to leave reviews of their experience shoppping at Treats. I have also include a blog section where the admin can post blog and then registered users are able to comment underneath said blogs.
   
 ![Am i responsive image](readme-docs/images/amiresponsive.jpg)  
 
@@ -45,6 +45,7 @@ Below are the user stories that were added to the Github project, They can be fo
 
 **EPIC | Navigation**
 - As a User I can easily navigate around the site so that I can view different pages and sections on the site.
+- As a User I can Search the site for a product so that I can find what I'm looking for.
 
 
 **EPIC - Registration & Login / Logout**
@@ -59,10 +60,18 @@ Below are the user stories that were added to the Github project, They can be fo
 - As a Superuser I can delete a product from the site.
 - As a User I can add a product to my shopping cart so that I can purchase it.
 - As a User I can Update my shopping cart so that I can change what's in my cart before checking out.
-- As a User I can remove a product from my cart so that can remove it an purchase the other items in my cart.
-- As a User I can Leave a review so that share my experience of shopping here.
-- As a User I can edit my review so that I can I can change it.
+- As a User I can remove a product from my cart so that I can remove it and purchase the other items in my cart.
+- As a User I can leave a review so that I can share my experience of shopping here.
+- As a User I can edit my review so that I can change it.
 - As a User I can Delete my review so that I can remove it.
+
+**EPIC - Administration**
+- As a Site Admin I can administer the site so that I can manage the sites content.
+- As a Site Owner I can Publish Blog posts so that customers can read them.
+- As a Site owner I can make changes to blog posts so that I have full control over them.
+- As a Admin I can have a email newsletter signup so that I can collect emails to send information about upcoming deals.
+- As a Admin I would like to send an order confirmation when a product is purchased so that the user knows that the order went through.
+- As a Admin I want a verification email sent so that so that the user has to verify their account.
 
 ### Wireframes
 Below are the wireframes for the site that I created using balsamiq.
@@ -121,7 +130,7 @@ Github projects was used to track the development of this website using the agil
 - **Montserrat** font was used for the body.
 
 ### Colour Scheme
-For this site I decide to keep the main color scheme very simple, with the text being black or grey. The logo and the login/ logout page headings in green. I did also have some buttons like the delete, cancel, edit and post buttons red, orange and blue but the main color scheme of the site was black, white, grey.
+For this site I decide to keep the main color scheme very simple, with the text being black or grey. The logo and the login/ logout page headings in green. I did also have some buttons like the delete, cancel, edit and post buttons red, orange and blue but the main color scheme of the site was black, white, grey and green.
   
 ![Colour scheme image](readme-docs/images/colors.jpg)  
 
@@ -138,19 +147,19 @@ Treats Sweet Shop is a e-commerce website that sells directly to consumers all o
 
 
 #### Social Media Marketing
-As the budget is limited with this business we decided to use cheap cheap organic marketing to start with and maybe in the future when business takes off we will look into some paid advertising. With all this in mind we decided to start with creating a Facebook Business page as Facebook is one of the biggest social media sites and one of the best for promoting a business. By creating a Facebook business page we then could post regular content of what we offer to keep the audience engaged. We have also decided on our Facebook page to do monthly Sweet hamper giveaways where the users just need to follow our page and share the post, this in turn is also cheap way that we can advertise our business. The Facebook page can be found [here](https://www.facebook.com/profile.php?id=100094215246991). (please note Facebook may have removed this page as they tend to remove inactive pages so i have included a screenshot below)
+As the budget is limited with this business we decided to use cheap organic marketing to start with and maybe in the future when business takes off we will look into some paid advertising. With all this in mind we decided to start with creating a Facebook Business page as Facebook is one of the biggest social media sites and one of the best for promoting a business. By creating a Facebook business page we then could post regular content of what we offer to keep the audience engaged. We have also decided on our Facebook page to do monthly Sweet hamper giveaways where the users just need to follow our page and share the post, this in turn is also a cheap way that we can advertise our business. The Facebook page can be found [here](https://www.facebook.com/profile.php?id=100094215246991). (please note Facebook may have removed this page as they tend to remove inactive pages so I have included a screenshot below)
 
 
 ![Facebook Page](readme-docs/images/facebook.jpg)  
 
 #### Email Marketing
-We also plan to send out a monthly news letter that details what products we have to offer adn any new products that we may have on the site, as the site is still growing we will be constantly adding more and more products. In order to collect emails for our monthly mailing list we have added a suscribe inbupt field at the bottom of page in the footer where the user can enter there email address and then click suscribe, which will then sign them up to our monthly news letter. We used mailchimp to collect our mailing list.
+We also plan to send out a monthly news letter that details what products we have to offer and any new products that we may have on the site, as the site is still growing we will be constantly adding more and more products. In order to collect emails for our monthly mailing list we have added a suscribe inpupt field at the bottom of page in the footer where the user can enter their email address and then click suscribe, which will then sign them up to our monthly news letter. We used mailchimp to collect our mailing list.
 
 #### Search Engine Optimization
-For the this project I completed research on which SEO keywords to use both short-tail(which are more broad generic and pouular searhch terms ) and long-tail(which are keywords that are more specific, niche, and targeted terms that have a lower search volume and competition) in order to improve the search engine ranking so that our site will be more visible to people online.
+For this project I completed research on which SEO keywords to use both short-tail(which are more broad generic and popular search terms ) and long-tail(which are keywords that are more specific, niche, and targeted terms that have a lower search volume and competition) in order to improve the search engine ranking so that our site will be more visible to people online.
 
 #### Sitemap.xml
-To help search engines crawl through our website a sitemap was created with alist of all the important Urls and Data on the site. We used XML sitemaps.com to create our sitemap.The website can be found [here](https://www.xml-sitemaps.com/)
+To help search engines crawl through our website a sitemap was created with a list of all the important urls and data on the site. We used XML sitemaps.com to create our sitemap.The website can be found [here](https://www.xml-sitemaps.com/)
 
 #### Robots.txt
 A robots.txt file was created to tell search engines where not to crawl on the site.
@@ -158,9 +167,9 @@ A robots.txt file was created to tell search engines where not to crawl on the s
 ## Features
 
 ### Navigation Bar
-- The Navigation bar sits at the very top of each page, The logo is at the right hand side and the navigation links are then to the left of the center of the page with the search, card and login/ register to the right hand side.
-- When logged in the links for **Login** and the **Registeration** change to **My Profile** and logout, if the user is a superuser then they will also have a **Add Product** link.
-- The Navbar background is a light grey which is colored using the the bootstrap **bg-info** class, the logo is green and the links are black in colour.
+- The Navigation bar sits at the very top of each page, The logo is at the left hand side and the navigation links are then to the left of the center of the page with the search, login/ register and shopping cart to the right hand side.
+- When logged in the links for **Login** and the **Registeration** change to **My Profile** and **Logout**, if the user is a superuser then they will also have a **Add Product** link.
+- The Navbar background is a light grey which is coloured using the the bootstrap **bg-info** class, the logo is green and the links are black in colour.
 - The active page (page that the user is currently on) is displayed in bold text, this makes it stand out much more and is clear to the user which page they are on.
 - When on medium to small screens the navigation menu changes to burger menu which shows all the nav links when clicked on.
 
@@ -168,8 +177,8 @@ A robots.txt file was created to tell search engines where not to crawl on the s
 
 ### Footer
 - The footer is found at the bottom of every page and responsive for tablet and mobile too.
-- There are icon links to the business Instagram and Facebook page(please note these may have been removed byy facebook when you are reading this as they tend to remove fake pages).
-- Beneath this is an input box where the user enter their email address, which will allow them to suscribe to the shops newsletter
+- There are icon links to the business Instagram and Facebook page(please note these may have been removed by Facebook when you are reading this as they tend to remove inactive pages).
+- Beneath this is an input box where the user can enter their email address, which will allow them to suscribe to the shops newsletter
 - The background is also light grey like the Navigation bar.
 
 ![footer](readme-docs/images/footer.jpg)
@@ -177,7 +186,7 @@ A robots.txt file was created to tell search engines where not to crawl on the s
 
 ### Home Page
 - The home page has 2 large images that both take up 50% of the screen width on large devices and 100% on small and medium screens.
-- The image on the left is a image that i created using illustrator that syas **Treat Yourself** and then underneather the text there nis a button that says **Shop Now**, which once clicked will bring users to the all products page.
+- The image on the left is an image that I created using free trial of illustrator that syas **Treat Yourself** and then underneather the text there is a button that says **Shop Now**, which once clicked will bring users to the all products page.
 - The image on the right is a picture of different sweets on a table.
 
 ![HomePage](readme-docs/images/home.png) 
@@ -195,36 +204,36 @@ A robots.txt file was created to tell search engines where not to crawl on the s
 
 
 ### Product Details Page
-- On the products detail you will see the product image on the left and on mobile and small devices this will be the full width bar some padding.
+- On the products detail page you will see the product image on the left and on mobile and small devices this will be the full width bar some padding.
 - On the right of this you will have the product name, the price, a description, the category and if the user is an admin you will also see a delete and edit button. 
-- Then you will see a quantity selector that can be increased or decrease by the **+** or **-** signs. Below the quantity sign there is a back button that will bring you **Back** to products when clicked and there is also an **Add to cart** button that will add the product to your cart so you can purchase.
+- Then you will see a quantity selector that can be increased or decrease by the **+** or **-** signs. Below the quantity selector there is a **Back** button that will bring you back to products when clicked and there is also an **Add to Cart** button that will add the product to your cart so you can purchase.
 
 
 ![Product details](readme-docs/images/product-details.png) 
 - - -
 
 ### Shopping Cart Page
-- When a user adds a product to thir cart it is deisplayed in the shopping cart page, the user can add multiple products to their cart
-- At the top you will see a H2 heading saying **shopping cart** with a horizontial line above and below it.
+- When a user adds a product to their cart it is displayed in the shopping cart page, the user can add multiple products to their cart.
+- At the top you will see a H2 heading saying **Shopping Cart** with a horizontial line above and below it.
 - Then you will see 4 table headings which will say **Product Info**, **Price**, **Qty**, **Subtotal**.
-- In the **Product Info** column you will see a small picture of the product and the product name, in the **Price** colument you will see the price for each product. In the **Qty** you will see the quantity which you can change with the selector and click update, There is also a button to remove a product here. Then in the **Subtotal** column you will see the subtotal price for each item.
-- Below the products that are in the shopping cartt towards the right you will see the **Cart Total** and below this the **Delivery** which when added together will give you the **Grand Total**, beneath the grand total in red it will tell you how much more you need to spend to get free deleivery if you havent already surpased it.
-- Then  we have a **back** button which will bring the user back to the **Products** page and a **Secure Checkout** button which will bring the user to the secure checkout.
+- In the **Product Info** column you will see a small picture of the product and the product name, in the **Price** column you will see the price for each product. In the **Qty** you will see the quantity which you can change with the selector and click update, There is also a button to remove a product here. Then in the **Subtotal** column you will see the subtotal price for each item.
+- Below the products that are in the shopping cart towards the right you will see the **Cart Total** and below this the **Delivery** which when added together will give you the **Grand Total**, beneath the grand total in red it will tell you how much more you need to spend to get free delivery if you havent already surpassed it.
+- Then  we have a **Back** button which will bring the user back to the Products page and a **Secure Checkout** button which will bring the user to the secure checkout.
 
 ![Shopping cart](readme-docs/images/cart.png) 
 - - -
 
 ### Checkout Page
 - On the check out page at the top you will see a H2 heading that is centered and says **Checkout** with a horizontal line above and below it.
-- Beneath this is the order summary which will show a **small picture of the items**, the **name of the product**, the **quantiity**, **the price**, the **delivery** and the **grand total**.
-- Then there is the form where the user will have to fill out the form with their **name**, **email**, phone and **address details**. There is also a buton to check that will save the info you have enterd to your profile.
-- Then there is the payment input where a user can enter their card details which will then be processed through **Stripe payments** when they click the **complete oorder** button below it.
-- Beside the **complete oorder** button there is a **Back** button which will bring the user back to their cart, underneath the buttons in red writing you will see text saying how mcuh your card will be charged.
+- Beneath this is the order summary which will show a **small picture of the items**, the **name of the product**, the **quantity**, **the price**, the **delivery** and the **grand total**.
+- Then there is the form where the user will have to fill out the form with their **name**, **email**, phone and **address details**. There is also a check button that will save the info you have enterd to your profile.
+- Then there is the payment input where a user can enter their card details which will then be processed through **Stripe payments** when they click the **Complete Order** button below it.
+- Beside the **Complete Crder** button there is a **Back** button which will bring the user back to their cart, underneath the buttons in red writing you will see text saying how mcuh your card will be charged.
 
 ![Checkout page](readme-docs/images/checkout.png) 
 
 ### Blog Page
-- On the blog page you will see a link that says **Please log in to read the blogs** and when clicked will bring the user to the sign in page,k where they can sign in or register, only users who are signed in can read each blog post(this link will not be visible if the user is signed in).
+- On the blog page you will see a link that says **Please log in to read the blogs** and when clicked will bring the user to the sign in page, where they can sign in or register, only users who are signed in can read each blog post(this link will not be visible if the user is signed in).
 - Beneath this you will see the blog post in bootstrap card format which will show a picture, the title of the blog post, the date it was posted on and a blue **Read** button. If the user is not signed in when they click the read button it will bring them to the sign in page.
 - If the user is an admin, then above the blog posts on the left side there will be a blue button that says **Add Post** which when clicked will bring the admin to a form where they can enter a new blog post.
 

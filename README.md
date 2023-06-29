@@ -190,6 +190,8 @@ A robots.txt file was created to tell search engines where not to crawl on the s
 - The image on the right is a picture of different sweets on a table.
 
 ![HomePage](readme-docs/images/home.png) 
+
+[Back to the top](#treats-sweet-shop)
 - - -  
 
 
@@ -231,6 +233,10 @@ A robots.txt file was created to tell search engines where not to crawl on the s
 - Beside the **Complete Crder** button there is a **Back** button which will bring the user back to their cart, underneath the buttons in red writing you will see text saying how mcuh your card will be charged.
 
 ![Checkout page](readme-docs/images/checkout.png) 
+
+[Back to the top](#treats-sweet-shop)
+- - -
+
 
 ### Blog Page
 - On the blog page you will see a link that says **Please log in to read the blogs** and when clicked will bring the user to the sign in page, where they can sign in or register, only users who are signed in can read each blog post(this link will not be visible if the user is signed in).
@@ -282,6 +288,8 @@ A robots.txt file was created to tell search engines where not to crawl on the s
 
 ![Add Review Page](readme-docs/images/add-review.png) 
 
+[Back to the top](#treats-sweet-shop)
+- - -
 
 ### Edit Review Page
 - This is exactly like the **Add Review** page only the H2 heading at the top says **Edit Your Review** and has the form already prepoulated with their previous review so that they can edit it.
@@ -369,3 +377,5 @@ This website is deployed to Heroku from a github repository, the following steps
 - I would like to thank Code Institutes Slack Communtiy as this helped me so much when I got stuck on part of my project and also with course challenges.
 - I would to thank tutor support for all the help when I got stuck and  could not figure an issue out, they provided greate support.
 - I would also like to thank our chort facilitators Kenan Wright and Kasia Bogucka, for answering any course related questions I asked and for porviding us with a weekly study schedule.
+
+[Back to the top](#treats-sweet-shop)

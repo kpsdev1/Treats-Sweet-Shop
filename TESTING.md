@@ -93,6 +93,8 @@ The Javascript file was put through Jshint code validator to see if there were a
 ![JS Validation](readme-docs/images/js.jpg)
 
 ![JS Validation](readme-docs/images/stripe-js.jpg)
+
+[Back to the top](#table-of-contents)
 - - -
 
 
@@ -498,6 +500,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 ![iphone 7 image](readme-docs/images/iphone7.jpg)
 </details>  
 
+[Back to the top](#table-of-contents)
 - - - 
 
 ## User Story Testing
@@ -792,3 +795,13 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Prepoulate delivery information | If the user has delivery information filled out on thir profile it will prepopulate the delivery information on the checkout page | Pass      |
 | Complete Order Button  | When the form is fillout correctly, the order is place and it is able be seen in stripe and confimation email is also sent to user     | Pass      |
 | Back Button  | When clciked brings the suer back to their shopping cart   | Pass      |
+
+
+## Bugs
+
+### Fixed
+- After creating the project I was getting alot of PEP8 errors, most of which were for **lines too long**. To fix this and conform to PEP8 standards I broke the lines up and made sure they did not go past 79 characters.
+- One of the main issues I had was with the quantity selector, it would not update for each item in the shopping cart, only the first product in the list would allow you to update the quantity, this was because I was using **querySelector()** selector instead of the **querySelectorAll()** method and then having to loop through the items.
+- I started to get a CORS issue with fontawesome icons and they started to display incorrectly, from searching online oi found that if you add **CORS_ALLOWED_ORIGINS = []** and **CORS_ALLOWED_ORIGIN_REGEXES = []** to the settings file that this fixes the issue and the icons display correctly.
+
+[Back to the top](#table-of-contents)

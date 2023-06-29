@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['treats-sweet-shop.herokuapp.com', 'localhost', '8000-kpsdev1-treatssweetshop-1aj3d5qc6sw.ws-eu100.gitpod.io']  # noqa
+ALLOWED_HOSTS = ['treats-sweet-shop.herokuapp.com', 'localhost', '8000-kpsdev1-treatssweetshop-1aj3d5qc6sw.ws-eu101.gitpod.io']  # noqa
 
 
 # Application definition

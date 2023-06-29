@@ -240,10 +240,10 @@ A robots.txt file was created to tell search engines where not to crawl on the s
 ![Blog page](readme-docs/images/blog.png) 
 
 ### Post Detail page
-- At the top of the Post details you will have the Post title displayed using a h2 heading tag, directly below this will then be the image of the blog post sand then below that will be thePost body which will display the main text of a post. Everything is in the centered bar on small and extra small devices where they take up nearly the full width of the screen.
+- At the top of the Post details you will have the Post title displayed using a h2 heading tag, directly below this will then be the image of the blog post and then below that will be the Post body which will display the main text of a post. Everything is in the centered bar on small and extra small devices where they take up nearly the full width of the screen.
 - Below the Post body there is a comment section that will show any comments posted by users(users need to signed in to view the blog post and to also comment)
-- Under the comment section there is a **Post A comment** box where a user can enter their comment and when they click post it will be displayed in the comment section. The user will also see a delete and edit button at the top right of their posted comments, if they click the delete button a bootstrap modal will appear asking them to confirm the deletion. If the user clicks the edit button they will be taken to another page that has a comment box with their posted comment in there for them to edit.
-- If the user is an admin right below the image on the right side there will be an edit and delete button, if they click the delete button a bootstrap modal will appear asking them to confirm the deletion and if they click the edit button they will be taken to a prefilled form where they can edit the post.
+- Under the comment section there is a **Post a Comment** box where a user can enter their comment and when they click post it will be displayed in the comment section. The user will also see a delete and edit button at the top right of their posted comments, if they click the delete button a bootstrap modal will appear asking them to confirm the deletion. If the user clicks the edit button they will be taken to another page that has a comment box with their posted comment in there for them to edit.
+- If the user is an admin right below the image on the right side there will be an **edit** and **delete** button, if they click the **delete** button a bootstrap modal will appear asking them to confirm the deletion and if they click the **edit** button they will be taken to a prefilled form where they can edit the post.
 
 ![Post Detail page](readme-docs/images/post-detail.png) 
 
@@ -265,12 +265,12 @@ A robots.txt file was created to tell search engines where not to crawl on the s
 - - -
 
 ### Reviews Page
-- At the top of the review page int the center is H1 heading that says **Cutomer Reviews**.
+- At the top of the review page in the center is H1 heading that says **Cutomer Reviews**.
 - If the users is signed in then there is a green **Add A Review** button to the right just above the most recent review.
-- Then below this are the reviews the revies are each in a light grey colored box, at the top right of the box is the review title then oppiste this at the left hand side is the review stars which can be from 1 - 5.
+- Then below this are the reviews, which are each in a light grey coloured box, at the top right of the box is the review title then opposite this at the left hand side is the review stars which can be from 1 - 5.
 - Below the title is the username of the person who posted the review and then underneath this is the body of the review, where the user can write a fully detailed review of the site.
-- Then at the bottom write of the review you will see the date and thim of which it was psoted on.
-- At the bottom left there is a edit and delete button that is visible to the user who psoted the review, the delete button is orange and when click brings up a bootstrap modal asking the user if they want to confirm the deletion. Then beside this is blue edit button which allows the user to edit their review.
+- Then at the bottom right of the review you will see the date and time of when it was psoted on.
+- At the bottom left there is a edit and delete button that is visible to the user who psoted the review, the **delete button** is orange and when clicked brings up a bootstrap modal asking the user if they want to confirm the deletion. Then beside this is blue **edit** button which allows the user to edit their review.
 
 ![Review Page](readme-docs/images/reviews.png) 
 - - -
@@ -278,21 +278,21 @@ A robots.txt file was created to tell search engines where not to crawl on the s
 ### Add Review Page
 - At the top of the page is a centered H2 heading that says **Write a Review** with a horizontal line above and below it.
 - Then there is the form below it with the field of **Title**, **Body**, and the **Rating** which is a drop down whith choices from 1 - 5.
-- At the bottom right there is a yellow **Cancel** button that when clciked will bring the user back to the review page, beside this there is a green**Submit** button that once clciked will submit the form and bring the user back to the reviews page where they will see their freshly posted review.
+- At the bottom right there is a yellow **Cancel** button that when clicked will bring the user back to the review page, beside this there is a green **Submit** button that once clicked will submit the form and bring the user back to the reviews page where they will see their freshly posted review.
 
 ![Add Review Page](readme-docs/images/add-review.png) 
 
 
 ### Edit Review Page
-- This is exactly like the **Add Review** page only the H2 heading at the top says **Edit Your Review** and has the form already prpoulated with their previous review so that they can edit it.
+- This is exactly like the **Add Review** page only the H2 heading at the top says **Edit Your Review** and has the form already prepoulated with their previous review so that they can edit it.
 
 ![Edit Review Page](readme-docs/images/edit-review.png) 
 - - -
 
 ### Add Product Page
-- This page is only availabe to admins so that they can add a product to the site, on the topn of the page is a H2 heading that is centered and says **Add a Product** with a horizontal line above and below it.
+- This page is only availabe to admins so that they can add a product to the site, on the top of the page is a H2 heading that is centered and says **Add a Product** with a horizontal line above and below it.
 - Below this we have the form with the first input **category** being a drop down, there there is the other inputs **Sku**, **Name**, **Type**, **Description**, **Price**, **Image Url** and **Image**.
-- Then below the form on the right is a yellow **Cancel** button that when clicked will bring the admin back tot the products page, beside it is a green **Add Product** button that will add the product to the porducts page once clicked and as logn as the form is filled out.
+- Then below the form on the right is a yellow **Cancel** button that when clicked will bring the admin back to the products page, beside it is a green **Add Product** button that will add the product to the porducts page once clicked and as logn as the form is filled out.
 
 ![Add Product Page](readme-docs/images/add-product.png) 
 - - -
@@ -336,7 +336,7 @@ This website is deployed to Heroku from a github repository, the following steps
 
 #### Create a database On ElephantSQL
 - Log into the [ElephantSQL](https://www.elephantsql.com/) website and click **Create new Instance**
-- Enter a **Name** and keep the plan as **Tiny Turtle Free**, then **tags** field can be left blank, Select a region closest to you, I selected **EU-West-1(Ireland)** as I'm in Ireland. Then click **Review** and afterwards click **create instance**.
+- Enter a **Name** and keep the plan as **Tiny Turtle Free**, the **tags** field can be left blank, Select a region closest to you, I selected **EU-West-1(Ireland)** as I'm in Ireland. Then click **Review** and afterwards click **create instance**.
 - On The Dashboard click on your database instance name.
 - You will see the details for your database instance, in the url section click on the copy icon to copy the database url.
 - Head over to gitpod and create a **Database URL** enviroment variable in your env.py file and set it equal to the copied url.
@@ -353,3 +353,7 @@ This website is deployed to Heroku from a github repository, the following steps
 ## Credits
 
 ## Acknowledgements
+- I would like to thank my mentor Adegbenga Adeye for all help throughout the project and for being really positive about the course.
+- I would like to thank Code Institutes Slack Communtiy as this helped me so much when I got stuck on part of my project and also with course challenges.
+- I would to thank tutor support for all the help when I got stuck and  could not figure an issue out, they provided greate support.
+- I would also like to thank our chort facilitators Kenan Wright and Kasia Bogucka, for answering any course related questions I asked and for porviding us with a weekly study schedule.

@@ -299,6 +299,8 @@ A robots.txt file was created to tell search engines where not to crawl on the s
 
 
 ## Future Features
+- In the future I would like to add more products to the site and maybe also add some soft drinks so that users could order sweeets and drinks.
+- I would also like a implememnt a stock monitoring system for the site admins so they would know how much of each product that they have and also when they would need to order more of a certain product, although at the momemnt I'm not so sure as to which would be the best way to tackle this.
 
 
 ## Technologies Used
@@ -351,6 +353,16 @@ This website is deployed to Heroku from a github repository, the following steps
 - - -
 
 ## Credits
+- Django For Beginners book, This is a book that I would recommend to everyone who wants to learn Django, this made me understand how to create simple class based views. The first 4 chapters can be read [here](https://djangoforbeginners.com/introduction/).
+- Code Institutes **Boutique Ado** walk through project was a great help, as it really gave me a way to structure a project and then build off it, I would have been totally lost without this.
+- Emmanuel Okiches youtube video for how to add an **active** class using djangos template lanuage. The video can be found [here](https://www.youtube.com/watch?v=e_D_hoJ1kAc).
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/layout/containers/) was great for looking up syntax and how to do something with bootstrap.
+- [Stack Overflow](https://stackoverflow.com/) is probably a developers best resource, this provided me with many answers to my questions.
+- [W3schools](https://www.w3schools.com/) this was great for looking up forgotten **CSS** and syntax and how to use it.
+- [Unsplash](https://unsplash.com/) all images were take from unsplash.
+- [30secondsofcode](https://www.30secondsofcode.org/articles/s/css-footer-at-the-bottom) showed me how to keep the footer at the bottom of the page.
+- [Sonar Systems](https://www.youtube.com/watch?v=AZs4zggS7kA) youtube video helped me with getting the bootstrap toasts to work the way I wanted.
+
 
 ## Acknowledgements
 - I would like to thank my mentor Adegbenga Adeye for all help throughout the project and for being really positive about the course.

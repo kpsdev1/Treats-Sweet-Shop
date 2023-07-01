@@ -87,7 +87,7 @@ As you can see from the below screenshot of the result there were no errors.
 
 ### JavaScript
 The Javascript file was put through Jshint code validator to see if there were any errors. Jshint can be found [here](https://jshint.com/).
-- The first image is from the JavaScript file i wrote for the Quantity buttons, it throws no errors but 2 warnings, i showed this to my mentor and he said that they are just warnings and can bve ignored, from looking online it is because the event lister is inside the for loop, when putting the event listener outside the forloop the warnings do not show but the quantity buttons do not work correctly.
+- The first image is from the JavaScript file I wrote for the Quantity buttons, it throws no errors but 2 warnings, I spoke to tutor support about this and they are just warnings and can be ignored as they do not affect the code, from looking online it is because the event listener is inside the for loop, when putting the event listener outside the forloop the warnings do not show but the quantity buttons do not work correctly.
 - The second JavaScript file is from Stripe and is the same one that is used in boutique ado, it gives one undefined variable, from searching on slack and speaking to tutor support, this is normal behaviour as it is comming form another script.
 
 ![JS Validation](readme-docs/images/js.jpg)
@@ -337,7 +337,7 @@ The Javascript file was put through Jshint code validator to see if there were a
 ![image of Python testing blog views.py file](readme-docs/images/blog-views.jpg)  
 </details>
 
-*Just to note, the settings.py file gave some **line too long** errors which are related to the default authorization, which I was told can be ignored in this file so I added the **Noqa** comment to them so that the linter would not read them, I also added the comment on a few lines through the project that did not make sense to breakup*  
+*Just to note, the settings.py file gave some **line too long** errors which are related to the default authorization, which I was told can be ignored in this file so I added the **Noqa** comment to them so that the linter would not read them, I also added the comment on a few lines through the project that did not make sense to breakup.*  
 - - -  
 
 ### Lighthouse
@@ -794,7 +794,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Save information to profile | When a registered user is checking out they will have a checkbox at the bootm of the form that they can click to save the information to their profile. | Pass      |
 | Prepoulate delivery information | If the user has delivery information filled out on thir profile it will prepopulate the delivery information on the checkout page | Pass      |
 | Complete Order Button  | When the form is fillout correctly, the order is place and it is able be seen in stripe and confimation email is also sent to user     | Pass      |
-| Back Button  | When clciked brings the suer back to their shopping cart   | Pass      |
+| Back Button  | When clicked brings the suer back to their shopping cart   | Pass      |
 
 
 ## Bugs
@@ -802,6 +802,6 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 ### Fixed
 - After creating the project I was getting alot of PEP8 errors, most of which were for **lines too long**. To fix this and conform to PEP8 standards I broke the lines up and made sure they did not go past 79 characters.
 - One of the main issues I had was with the quantity selector, it would not update for each item in the shopping cart, only the first product in the list would allow you to update the quantity, this was because I was using **querySelector()** selector instead of the **querySelectorAll()** method and then having to loop through the items.
-- I started to get a CORS issue with fontawesome icons and they started to display incorrectly, from searching online oi found that if you add **CORS_ALLOWED_ORIGINS = []** and **CORS_ALLOWED_ORIGIN_REGEXES = []** to the settings file that this fixes the issue and the icons display correctly.
+- I started to get a CORS issue with fontawesome icons and they started to display incorrectly, from searching online I found that if you add **CORS_ALLOWED_ORIGINS = []** and **CORS_ALLOWED_ORIGIN_REGEXES = []** to the settings file that this fixes the issue and the icons display correctly.
 
 [Back to the top](#table-of-contents)

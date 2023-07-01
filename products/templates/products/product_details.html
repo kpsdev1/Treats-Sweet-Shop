@@ -9,9 +9,9 @@
       <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
           <div class="container my-5">
               {% if product.image %}
-                  <img src="{{ product.image.url }}" class="img-details img-fluid detail-img" alt="Image of one of the products">
+                  <img src="{{ product.image.url }}" class="img-details img-fluid detail-img" alt="{{ product.name }}">
               {% else %}
-                  <img src="{{ MEDIA_URL }}noimage.png" class="img-details img-fluid detail-img" alt="Image of one of the products">
+                  <img src="{{ MEDIA_URL }}noimage.png" class="img-details img-fluid detail-img" alt="{{ product.name }}">
               {% endif %}
           </div>
       </div>

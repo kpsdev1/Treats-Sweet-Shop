@@ -342,6 +342,7 @@ The Javascript file was put through Jshint code validator to see if there were a
 
 ### Lighthouse
 Lighthouse in chrome dev tools was used to generate a report that tests the sites Performance, Accessibility, Best Practices and Seo.
+Please note that I have noticed that the performace score can vary and this is due to render blocking resources from Stripe which I could not figure out how to improve without affecting the site.
 
 <details>
     <summary>Home</summary>  

@@ -37,14 +37,11 @@ footer {
     font-family: Ysabeau, sans-serif;
     font-style: italic;
     margin-left: 20px;
-    
 }
 
 .homepage-image {
     width: 100%;
     height: 100%;
-    
-    
 }
 
 
@@ -137,7 +134,6 @@ footer {
 #mc_embed_signup {
     clear:left; 
     font:14px Helvetica,Arial,sans-serif;
-    
 }
 
 
@@ -147,8 +143,7 @@ footer i {
 }
 
 .fa-facebook {
-    color: #1bbee3;
-    
+    color: #1bbee3;  
 }
 
 .fa-instagram {
@@ -237,18 +232,18 @@ footer i {
 }
 
 @media screen and (max-width: 991px) {
+    /* navigation bar */
     .navbar a, .navbar form {
         margin-left: 3px !important;
     }
 
     .qty-font {
         font-size: .8rem;
-
     }
 
+    /* shop now button on home page */
     .shop-now {
         bottom: 15%;
-       
     }
 
 }
@@ -260,14 +255,12 @@ footer i {
         top: 45%;
         left: 35%;
         transform: translateY(-50%);
-
     }
 
     .shop-now-button {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
         font-size: medium;
-        
     }
 
 }
@@ -298,7 +291,7 @@ footer i {
         font-size: small !important;
     }
 
-    /* reviews */
+    /* reviews page */
     .heading-small {
         font-size: 1.5em !important;
 
@@ -339,6 +332,7 @@ footer i {
         width: 22px !important;
     }
 
+    /* class for making extra small button */
     .btn-xs {
         padding: .30rem .3rem;
         font-size: .785rem;
@@ -348,8 +342,6 @@ footer i {
 
     .shop-now {
         bottom: 20%;
-        
-        
     }
 
 
@@ -360,7 +352,6 @@ footer i {
     .message-container {
         right: 10px;
         width: 300px;
-        
     }
 
     .order-confirmation-wrapper {
@@ -369,8 +360,6 @@ footer i {
 
     .shop-now {
         bottom: 18%;
-        
-        
     }
 
 }

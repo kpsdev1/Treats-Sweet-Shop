@@ -584,6 +584,10 @@ Please note that I have noticed that the performace score on mobile can vary and
 *As a Admin I want a verification email sent so that so that the user has to verify their account.*
 - When a user signs up they have to verify their account through a verification email, this stops users from signing up with fake email addresses.
 
+#### Rest Password
+*As a User I can reset my password so that I can change it if I have forgotten it or want to change it.*
+- If a user forgets their password, they can click the **Forgot Password** link on the login page and then they will be asked to enter their email, this will then send the user an email with instructions on how to reset their password(if their email exists in the database.)
+
 - - -
 
 ## Manual Testing

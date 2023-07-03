@@ -1,6 +1,6 @@
 # Treats Sweet Shop
-Treat Sweet Shop is a e-Commerce website that I build using the Django Full Stack Framework for my fifth and final project at Code Institute.
-Treats Sweet Shop is a online sweet store where users can purchase sweets from a wide variety of products, there is also a section on the website that allows users to leave reviews of their experience shoppping at Treats. I have also include a blog section where the admin can post blog and then registered users are able to comment underneath said blogs.
+Treats Sweet Shop is a e-commerce website that I build using the Django Full Stack Framework for my fifth and final project in Full Stack Development at Code Institute.
+Treats Sweet Shop is a online sweet store where users can purchase sweets from a wide variety of products, there is also a section on the website that allows users to leave reviews of their experience shopping at Treats. I have also included a blog section where the admin can post a blog and then registered users are able to comment underneath said blogs.
   
 ![Am i responsive image](readme-docs/images/amiresponsive.jpg)  
 
@@ -52,6 +52,7 @@ Below are the user stories that were added to the Github project, They can be fo
 - As a User I can Sign-in/ Sign-out so that I can access features when signed in and sign-out so that no one can access my account.
 - As a User I can Register an account so that I can use the full functionality of the site.
 - As a User I can register with my social media account so that I can sign up faster.
+- As a User I can reset my password so that I can change it if I have forgotten it or want to change it.
 
 **EPIC - CRUD Functionality**
 - As a User I can view a list of products so that I click on one to see the product details.
@@ -376,6 +377,6 @@ This website is deployed to Heroku from a github repository, the following steps
 - I would like to thank my mentor Adegbenga Adeye for all help throughout the project and for being really positive about the course.
 - I would like to thank Code Institutes Slack Communtiy as this helped me so much when I got stuck on part of my project and also with course challenges.
 - I would to thank tutor support for all the help when I got stuck and  could not figure an issue out, they provided greate support.
-- I would also like to thank our chort facilitators Kenan Wright and Kasia Bogucka, for answering any course related questions I asked and for porviding us with a weekly study schedule.
+- I would also like to thank our chort facilitators Iris Smok and Kasia Bogucka, for answering any course related questions I asked and for porviding us with a weekly study schedule.
 
 [Back to the top](#treats-sweet-shop)

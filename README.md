@@ -48,7 +48,7 @@ Treats Sweet Shop is a online sweet store where users can purchase sweets from a
 - To provide users with a good shopping experience.
 - To provide users with a site that is easy to navigate and understand.
 - To provide a safe a reliable site where users can purchase sweets.
-- To provide a site that allows user to purchase products without having to register, whioch makes for a easy and fast shopping experience.
+- To provide a site that allows users to purchase products without having to register, which makes for a easy and fast shopping experience.
 
 ### User Stories
 Below are the user stories that were added to the Github project, They can be found [here](https://github.com/kpsdev1/Treats-Sweet-Shop/issues) in the issue section of the repository.

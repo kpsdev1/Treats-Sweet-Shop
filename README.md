@@ -44,7 +44,7 @@ Treats Sweet Shop is a online sweet store where users can purchase sweets from a
 ## UX Design
 
 ### Site Goals
-- To provide the site owner with a website to sell his products.
+- To provide the site owner with a website to sell their products.
 - To provide users with a good shopping experience.
 - To provide users with a site that is easy to navigate and understand.
 - To provide a safe a reliable site where users can purchase sweets.

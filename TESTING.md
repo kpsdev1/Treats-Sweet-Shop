@@ -509,7 +509,7 @@ Please note that I have noticed that the performace score on mobile can vary and
 
 #### Navigation
 *As a User I can easily navigate around the site so that I can view different pages and sections on the site.*
-- The Navigation is at the top of the page is easy to navigate and the current page link is bold which clearly indicates what page you are on.
+- The Navigation is at the top of the page, it is easy to navigate and the current page link is bold which clearly indicates what page you are on.
 
 
 #### Registration
@@ -519,7 +519,7 @@ Please note that I have noticed that the performace score on mobile can vary and
 
 #### Login / Logout
 *As a User I can Sign-in/ Sign-out so that I can access features when signed in and sign-out so that no one can access my account.*
-- When a User is not logged in the login link will be visible in the navigation bar, the same link will change to logut when the user is logged in.
+- When a User is not logged in the login link will be visible in the navigation bar, the same link will change to logout when the user is logged in.
 - When the User enters their login credentials they will be able to access the full fuctionality of the site, when the user is logged out they will not have full access on the site and their account will be secure.
 
 #### View Products
@@ -545,11 +545,11 @@ Please note that I have noticed that the performace score on mobile can vary and
 
 #### Update Cart
 *As a User I can Update my shopping cart so that I can change what's in my cart before checking out.*
-- When the user is on the shopping cart page(they can click the shopping cart icon in the Nav bar to access it) they can change the quantity of the proudcts they have in their cart by using the quantity selector and then clicking the update button.
+- When the user is on the shopping cart page(they can click the shopping cart icon in the Nav bar to access it) they can change the quantity of the proudcts they have in their cart by using the quantity selector and then clicking the **update** button.
 
 #### Remove from Cart
 *As a User I can remove a product from my cart so that I can remove it and purchase the other items in my cart.*
-- When the user is on the shopping cart page(they can click the shopping cart icon in the Nav bar to access it) under each item in their cart there will be a remove button, when they click the remove button this will remove the product.
+- When the user is on the shopping cart page(they can click the shopping cart icon in the Nav bar to access it) under each item in their cart there will be a **remove** button, when they click the **remove** button this will remove the product.
 
 #### Leave a Review
 *As a User I can Leave a review so that I can share my experience of shopping here.*
@@ -557,11 +557,11 @@ Please note that I have noticed that the performace score on mobile can vary and
 
 #### Edit a Review
 *As a User I can edit my review so that I can change it.*
-- In the top right of a review that the user has left there is an **edit** button that when clicked it will bring them to the prefilled form with their review so that they can edit it. A user can only edit a review they have posted.
+- In the top right of a review that the user has written, there is an **edit** button that when clicked it will bring them to the prefilled form with their review so that they can edit it. A user can only edit a review they have posted.
 
 #### Delete a Review
 *As a User I can Delete my review so that I can remove it.*
-- In the top right of a review that the user has left there is an **Delete** button that when clicked it will bring up a bootstrap modal asking the user to confim their deletion, oce comfirmed then the review will be removed. A user can only delete a review they have posted.
+- In the top right of a review that the user has written, there is an **Delete** button that when clicked it will bring up a bootstrap modal asking the user to confim their deletion, once comfirmed then the review will be removed. A user can only delete a review they have posted.
 
 #### Publish Blog Post
 *As a Site Owner I can Publish Blog posts so that customers can read them.*
@@ -578,15 +578,15 @@ Please note that I have noticed that the performace score on mobile can vary and
 
 #### Order Confirmation.
 *As a Admin I would like to send an order confirmation when a product is purchased so that the user knows that the order went through.*
-- When a user purchases a product a confirmation email is sent their email so that they know the order completed sucessfully.
+- When a user purchases a product a confirmation email is sent to their email so that they know the order completed sucessfully.
 
 #### Verify Account
-*As a Admin I want a verification email sent so that so that the user has to verify their account.*
+*As a Admin I want a verification email sent so that the user has to verify their account.*
 - When a user signs up they have to verify their account through a verification email, this stops users from signing up with fake email addresses.
 
 #### Rest Password
 *As a User I can reset my password so that I can change it if I have forgotten it or want to change it.*
-- If a user forgets their password, they can click the **Forgot Password** link on the login page and then they will be asked to enter their email, this will then send the user an email with instructions on how to reset their password(if their email exists in the database.)
+- If a user forgets their password, they can click the **Forgot Password** link on the login page and then they will be asked to enter their email, this will then send the user an email with instructions on how to reset their password(if their email exists in the database).
 
 - - -
 
@@ -600,7 +600,7 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Products | Clicking on the Products link, brings user to the product page.                      | Pass    |
 | blog | Clicking on the blog link, brings user to the blog page.           | Pass    |
 | Reviews | Clicking on the Reviews link, brings user to the reviews page.                      | Pass    |
-| search| Entering a product into the search box and clicking the icon displays a result for the product.     | Pass    |
+| Search| Entering a product into the search box and clicking the icon displays a result for the product.     | Pass    |
 | Register | When signed out clicking on the Register link, brings the user to the Registeration page.   | Pass    |
 | Login | When signed out, clicking on the Login link, brings the user to the login page.    | Pass    |
 | Logout | When signed in, clicking on the logout link, brings the user to the logout page.  | Pass    |
@@ -625,8 +625,8 @@ Please note that I have noticed that the performace score on mobile can vary and
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
 | Images | Checked to make sure Images load correctly on large and small devices.            | Pass      |
-| Shop Now Button | When clicked brings the user to the products page.                        | Pass      |
-| About Us Section | Make sure section displays correctly on all device widths.              | Pass      |
+| Shop Now Button | When clicked brings the user to the products page.                       | Pass      |
+
 
 
 #### Products
@@ -645,7 +645,7 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Product Content   | Make sure the product content displays correctly.                         | Pass      |
 | Edit Product   | When clicked brings the admin to the edit form, this is only visible to a superuser.            | Pass      |
 | Delete Product   | When clicked this will delete the product from the site and database, this is only visible to a superuser.        | Pass      |
-| Quantity Button  | Allows user to select how much of a porduct he wants before adding to the cart. Also checked that 1 is the minimum.    | Pass      |
+| Quantity Button  | Allows user to select how much of a porduct they want before adding to the cart. Also checked that 1 is the minimum.    | Pass      |
 | Back button   | When clicked brings the user back to the products page.         | Pass      |
 | Add to Cart Button   | When clicked adds the product to cart and also the quantity of that product    | Pass      |
 
@@ -690,10 +690,10 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Admin only  | Make sure only a site admin can access this page.                            | Pass      |
-| Display form  | Check to see if all input fields display correctly.                        | Pass      |
-| Submit filled out form  | Fill out all the form and click the Submit button at the bottom of the page. | Pass      |
-| Leave an Input field blank | Check to make sure form wont submit, and will display warnings. | Pass      |
+| Admin Only  | Make sure only a site admin can access this page.                            | Pass      |
+| Display Form  | Check to see if all input fields display correctly.                        | Pass      |
+| Submit Filled Out Form  | Fill out all the form and click the Submit button at the bottom of the page. | Pass      |
+| Leave an Input Field Blank | Check to make sure form wont submit, and will display warnings. | Pass      |
 | Submit Button | On click it will submit the Post and bring the admin back to the blog page where they will see the post. | Pass      |
 | Cancel Button | On click it will bring the admin back to the blog page.                  | Pass      |
 | Success Message | Success message is displayed at the top right of the screen when a user clicks submit.  | Pass      |
@@ -705,20 +705,20 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
 | Post Content   | Make sure the post content displays correctly.                         | Pass      |
 | Edit Button   | When clicked brings the admin to the edit post form, this is only visible to a superuser.            | Pass      |
-| Delete Button  | When clicked this will bring up a delete modal form the admin to confim the deletion, this is only visible to a superuser.        | Pass      |
-| Comment section  | Make sure all comments diplay correctly   | Pass      |
-| Edit comment Button | This is only visible to the user who posted the comment and is in the top right of the comment, when clicked will bring a user to the edit comment page.  | Pass      |
-| Delete comment Button | This is only visible to the user who posted the comment and is in the top right of the comment, when clicked will bring up a bootstrap modal asking the user to confirm the deletion.  | Pass      |
-| Post comment   | When clicked posts the comment that a user has entered in the comment box, this will then be visible in the comment section.     | Pass      |
+| Delete Button  | When clicked this will bring up a delete modal for the admin to confim the deletion, this is only visible to a superuser.        | Pass      |
+| Comment Section  | Make sure all comments diplay correctly.   | Pass      |
+| Edit Comment Button | This is only visible to the user who posted the comment and is in the top right of the comment, when clicked will bring a user to the edit comment page.  | Pass      |
+| Delete Comment Button | This is only visible to the user who posted the comment and is in the top right of the comment, when clicked will bring up a bootstrap modal asking the user to confirm the deletion.  | Pass      |
+| Post Comment   | When clicked posts the comment that a user has entered in the comment box, this will then be visible in the comment section.     | Pass      |
 
 
 #### Edit Post Page
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Admin only  | Make sure only a site admin can access this page.                            | Pass      |
-| Display form  | Check to see if all input fields display with the orginal post details.   | Pass      |
-| Update form  | Update the form and click the Submit button at the bottom of the page and check if the Post has been updated. | Pass      |
+| Admin Only  | Make sure only a site admin can access this page.                            | Pass      |
+| Display Form  | Check to see if all input fields display with the orginal post details.   | Pass      |
+| Update Form  | Update the form and click the Submit button at the bottom of the page and check if the Post has been updated. | Pass      |
 | Submit Button | On click it will update the post, and bring the user back to the posts detail page where the updated post can be seen. | Pass      |
 | Cancel Button | On click it will bring the user back to the post details page.                  | Pass      |
 | Success Message | Success message is displayed at the top right of the screen when a user clicks Submit . | Pass      |
@@ -739,8 +739,8 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Reviews  | Check to make sure each review is diplayed correctly with newest at the top.    | Pass      |
-| Add a Review button  | Is only visible when a user is signed in and when clicked brings the user to the Add review page.    | Pass      |
+| Reviews  | Check to make sure each review is displayed correctly with newest at the top.    | Pass      |
+| Add a Review Button  | Is only visible when a user is signed in and when clicked brings the user to the Add review page.    | Pass      |
 | Edit button  | This is only visible to the user who posted the review and is at the bottom right of the review, when clicked will bring a user to the edit review page.  | Pass      |
 | Delete button  | This is only visible to the user who posted the review and is at the bottom right of the review, when clicked will bring up the bootstrap delete modal where it will ask the user to confirm the deletion.  | Pass      |
 
@@ -749,11 +749,11 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Display form  | Check to see if all input fields display with the orginal review details.   | Pass      |
-| Update form  | Update the form and click the Submit button at the bottom and check if the Review has been updated. | Pass      |
+| Display Form  | Check to see if all input fields display with the orginal review details.   | Pass      |
+| Update Form  | Update the form and click the Submit button at the bottom and check if the Review has been updated. | Pass      |
 | Submit Button | On click it will update the review, and bring the user back to the Reviews page where the updated Review can be seen. | Pass      |
 | Cancel Button | On click it will bring the user back to the Reviews page.                  | Pass      |
-| Success Message | Success message is displayed at the top right of the screen when a user clicks Submit . | Pass      |
+| Success Message | Success message is displayed at the top right of the screen when a user clicks Submit. | Pass      |
 
 
 #### Delete A Review Modal
@@ -772,15 +772,15 @@ Please note that I have noticed that the performace score on mobile can vary and
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
 | Sign In link | Below the Signup heading, click Sign in link to see if it brings you to the login page        | Pass      |
-| Submit Filled Out Form  | Fill out the form and click the Signup button to see if new account is created and user is sent a confirmation email. | Pass      |
+| Submit Filled Out Form  | Fill out the form and click the Signup button to see if a new account is created and the user is sent a confirmation email. | Pass      |
 | Leave Email Field Blank  | Fill out all the form except email field and hit the Sign Up button to see if warnings appear and does not Sign Up.| Pass      |
 | Leave Email(again) Field Blank  | Fill out all the form except email again field and hit the Sign Up button to see if warnings appear and does not Sign Up.| Pass      |
 | Leave Username Field Blank| Fill out the form and leave Username field blank, to see if it give a warning and does not Sign Up.| Pass      |
 | Leave Password Field Blank| Fill out the form and leave Password field blank, to see if it give a warning and does not Sign Up.| Pass      |
 | Leave Password (again) Field Blank| Fill out the form and leave Password (again) field blank, to see if it give a warning and does not submit.| Pass      |
-| Signup with an taken username| Try to register an account that already has the taken username, and see if it fails and warns you that there is an account with that username. | Pass      |
-| Signup Button | On click check will it submit the user details and and sent them a confirmation email. | Pass      |
-| Verify your email address | When the user enters the correct details they will then see a page that tells them we have sent a verifcation email and to follow the steps in the email. | Pass      |
+| Signup With an Taken Username| Try to register an account that already has the taken username, and see if it fails and warns you that there is an account with that username. | Pass      |
+| Signup Button | On click check will it submit the user details and and send them a confirmation email. | Pass      |
+| Verify Your Email Address | When the user enters the correct details they will then see a page that tells them we have sent a verifcation email and to follow the steps in the email. | Pass      |
 
 
 #### Login Page
@@ -790,9 +790,9 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Sign Up link | Under the Sign In heading , clicking Sign up to see if it brings you to the Register page     | Pass      |
 | Leave Username Field Blank| Fill out Password Field and leave Username field blank, to see if it give a warning and does not Sign in.| Pass      |
 | Leave Password Field Blank| Fill out the Username field and leave Password field blank, to see if it give a warning and does not submit.| Pass      |
-| Sign In with unregistered account | Try to sign in with an account that is not registered, to see if it will fail. | Pass      |
-| Change on letter in username or password | On click check will tell the user that the username or password is incorrect. | Pass      |
-| Sign In Button | On click check will it log the user in if they have entered the right credentials and redirect them to the home page. | Pass      |
+| Sign In with Unregistered Account | Try to sign in with an account that is not registered, to see if it will fail. | Pass      |
+| Change 1 Letter in Username or Password | Check will it tell the user that the username or password is incorrect. | Pass      |
+| Sign In Button | On click, check will it log the user in if they have entered the right credentials and redirect them to the home page. | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user enters the correct details and clicks Sign in. | Pass      |
 
 
@@ -803,23 +803,23 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Shows products in cart | Check to see if it displays your cart contents correctly.   | Pass      |
 | Update Button| Under each product there is an update button, when the user changes the quantity with the quantity selector and clicks update it changes the subtotal for that product. | Pass      |
 | Remove Button | Under each product there is an Remove button, that when clicked will remove the product from the cart.   | Pass      |
-| Grand Total | Make sure the grand total updates the to the total price.  | Pass      |
+| Grand Total | Make sure the grand total updates to the total price.  | Pass      |
 | Secure Checkout button | Clicking on the secure checkout button will bring the user to the checkout page.  | Pass      |
-| Back button | Clicking on the Back button will bring the user back to the products page. | Pass      |
+| Back Button | Clicking on the Back button will bring the user back to the products page. | Pass      |
 
 
 #### Checkout Page
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| shows order summary | Above the form display a list of cart contents.  | Pass      |
-| Display form  | Check to see if all input fields display correctly.                        | Pass      |
-| Submit filled out form  | Fill out all the form and click the Complete order button at the bottom of the page. | Pass      |
-| Leave an Input field blank | Check to make sure form wont submit, and will display warnings. | Pass      |
-| Allow checkout as guest | Check to make sure a user does not have to register to purchase items. | Pass      |
-| Login / Create an account | If user is checking out as a guest make sure there is a create account and login option at the bottom to save the information. | Pass      |
-| Save information to profile | When a registered user is checking out they will have a checkbox at the bootm of the form that they can click to save the information to their profile. | Pass      |
-| Prepoulate delivery information | If the user has delivery information filled out on their profile it will prepopulate the delivery information on the checkout page. | Pass      |
+| Show Order Summary | Above the form display a list of cart contents.  | Pass      |
+| Display Form  | Check to see if all input fields display correctly.                        | Pass      |
+| Submit Filled out Form  | Fill out all the form and click the Complete order button at the bottom of the page. | Pass      |
+| Leave an Input Field Blank | Check to make sure form wont submit, and will display warnings. | Pass      |
+| Allow Checkout as Guest | Check to make sure a user does not have to register to purchase items. | Pass      |
+| Login / Create an Account | If user is checking out as a guest make sure there is a create account and login option at the bottom to save the information. | Pass      |
+| Save Information to Profile | When a registered user is checking out they will have a checkbox at the bottom of the form that they can click to save the information to their profile. | Pass      |
+| Prepoulate Delivery Information | If the user has delivery information filled out on their profile it will prepopulate the delivery information on the checkout page. | Pass      |
 | Complete Order Button  | When the form is filled out correctly, the order is placed and it is able be seen in stripe and confimation email is also sent to user.     | Pass      |
 | Back Button  | When clicked brings the user back to their shopping cart.   | Pass      |
 
@@ -828,7 +828,7 @@ Please note that I have noticed that the performace score on mobile can vary and
 
 ### Fixed
 - After creating the project I was getting alot of PEP8 errors, most of which were for **lines too long**. To fix this and conform to PEP8 standards I broke the lines up and made sure they did not go past 79 characters.
-- One of the main issues I had was with the quantity selector, it would not update for each item in the shopping cart, only the first product in the list would allow you to update the quantity, this was because I was using **querySelector()** selector instead of the **querySelectorAll()** method and then having to loop through the items.
+- One of the main issues I had was with the quantity selector, it would not update for each item in the shopping cart, only the first product in the list would allow you to update the quantity, this was because I was using **querySelector()** instead of the **querySelectorAll()** method and then having to loop through the items.
 - I started to get a CORS issue with fontawesome icons and they started to display incorrectly, from searching online I found that if you add **CORS_ALLOWED_ORIGINS = []** and **CORS_ALLOWED_ORIGIN_REGEXES = []** to the settings file that this fixes the issue and the icons display correctly.
 
 [Back to the top](#table-of-contents)

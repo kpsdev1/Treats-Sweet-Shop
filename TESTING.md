@@ -616,7 +616,7 @@ Please note that I have noticed that the performace score on mobile can vary and
 | External links | Clicking on social media links opens on a new page.                       | Pass    |
 | Private Policy | Clicking on Private policy link opens on a new page with the private policy on it.   | Pass    |
 | Subscribing | Entering an email into the Suscribe input box and clicking suscribe, signs the user up to the mailing list   | Pass    |
-| Displays correctly on all pages | Made sure it displays correctly on all pages.            | Pass    |
+| Displays Correctly On All Pages | Made sure it displays correctly on all pages.            | Pass    |
 | Responsiveness | Checked to make sure link icons display correctly on smaller devices.     | Pass    |
 
 
@@ -633,8 +633,8 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Product cards   | Check to make sure product cards display correctly.                        | Pass      |
-| Click on image| Allow user to click the image part of the card which will then bring them to the product details page.    | Pass      |
+| Product Cards   | Check to make sure product cards display correctly.                        | Pass      |
+| Click on Image| Allow user to click the image part of the card which will then bring them to the product details page.    | Pass      |
 | Sort Button | Sorts the Products to the selected choice in the drop down.         | Pass      |
 
 
@@ -646,7 +646,7 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Edit Product   | When clicked brings the admin to the edit form, this is only visible to a superuser.            | Pass      |
 | Delete Product   | When clicked this will delete the product from the site and database, this is only visible to a superuser.        | Pass      |
 | Quantity Button  | Allows user to select how much of a porduct they want before adding to the cart. Also checked that 1 is the minimum.    | Pass      |
-| Back button   | When clicked brings the user back to the products page.         | Pass      |
+| Back Button   | When clicked brings the user back to the products page.         | Pass      |
 | Add to Cart Button   | When clicked adds the product to cart and also the quantity of that product    | Pass      |
 
 
@@ -654,11 +654,11 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Admin only  | Make sure only a site admin can access this page.                            | Pass      |
-| Display form  | Check to see if all input fields display correctly.                                  | Pass      |
-| Submit filled out form  | Fill out all the form and click the Add Product button at the bottom of the page. | Pass      |
-| Leave Image field blank on submission  | Check to make sure image place holder displays after submititng. | Pass      |
-| Leave Input fields blank | Check to make sure form wont submit, and will display warnings. | Pass      |
+| Admin Only  | Make sure only a site admin can access this page.                            | Pass      |
+| Display Form  | Check to see if all input fields display correctly.                                  | Pass      |
+| Submit Filled Out Form  | Fill out all the form and click the Add Product button at the bottom of the page. | Pass      |
+| Leave Image Field Blank on Submission  | Check to make sure image place holder displays after submititng. | Pass      |
+| Leave Input Fields Blank | Check to make sure form wont submit, and will display warnings. | Pass      |
 | Add Product Button | On click it will submit the Product. | Pass      |
 | Cancel Button | On click it will bring the user back to the Products list.                  | Pass      |
 | Success Message | Success message is displayed at the top right of the screen when a user clicks Add Product.  | Pass      |
@@ -668,9 +668,9 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Admin only  | Make sure only a site admin can access this page.                            | Pass      |
-| Display form  | Check to see if all input fields display with the orginal product details.   | Pass      |
-| Update form  | Update the form and click the Update product button at the bottom of the page and check if the product has been updated. | Pass      |
+| Admin Only  | Make sure only a site admin can access this page.                            | Pass      |
+| Display Form  | Check to see if all input fields display with the orginal product details.   | Pass      |
+| Update Form  | Update the form and click the Update product button at the bottom of the page and check if the product has been updated. | Pass      |
 | Update Product Button | On click it will Update the product, and bring the user to the products page where the updated product can be seen. | Pass      |
 | Cancel Button | On click it will bring the user back to the Products list.                  | Pass      |
 | Success Message | Success message is displayed at the top right of the screen when a user clicks Update Product. | Pass      |
@@ -680,7 +680,7 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Post cards   | Check to make sure each post card display correctly.                        | Pass      |
+| Post Cards   | Check to make sure each post card display correctly.                        | Pass      |
 | Read Button (when signed in)  | When clicked brings the user to the post details page.      | Pass      |
 | Read Button (when signed out)  | When clicked brings the login page.     | Pass      |
 | Add Post button  | Is only visible when a superuser is signed in and when clicked brings the admin to the Add post page.     | Pass      |
@@ -787,7 +787,7 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Sign Up link | Under the Sign In heading , clicking Sign up to see if it brings you to the Register page     | Pass      |
+| Sign Up Link | Under the Sign In heading , clicking Sign up to see if it brings you to the Register page     | Pass      |
 | Leave Username Field Blank| Fill out Password Field and leave Username field blank, to see if it give a warning and does not Sign in.| Pass      |
 | Leave Password Field Blank| Fill out the Username field and leave Password field blank, to see if it give a warning and does not submit.| Pass      |
 | Sign In with Unregistered Account | Try to sign in with an account that is not registered, to see if it will fail. | Pass      |
@@ -800,7 +800,7 @@ Please note that I have noticed that the performace score on mobile can vary and
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Shows products in cart | Check to see if it displays your cart contents correctly.   | Pass      |
+| Show Products in Cart | Check to see if it displays your cart contents correctly.   | Pass      |
 | Update Button| Under each product there is an update button, when the user changes the quantity with the quantity selector and clicks update it changes the subtotal for that product. | Pass      |
 | Remove Button | Under each product there is an Remove button, that when clicked will remove the product from the cart.   | Pass      |
 | Grand Total | Make sure the grand total updates to the total price.  | Pass      |
